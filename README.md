@@ -1,9 +1,9 @@
 # Cyber-Security-Portfolio
 A Portfolio with all the projects related to cyber-security I have worked on
 
-# H1 Google Cybersecurity Professional Certificate On Coursera
+## Google Cybersecurity Professional Certificate On Coursera
 
-# H2 Portfolio Activity: Draft a professional statement
+### Portfolio Activity: Draft a professional statement
 _A professional statement is an introduction to employers that briefly describes who you are and what you care about. It lets you showcase your cybersecurity interest, work experience, knowledge, skills, and achievements._
 
 Amidst the ever-expanding universe of tech, my presence is a beacon of dedication, knowledge, and passion. With over a decade of hands-on experience, I'm not just another face in the crowd. I'm a seasoned leader, a Group Product Manager, an Enterprise Coach, and a fervent advocate for growth in both personal and professional dimensions. My professional roles transcend mere titles; they resonate with a calling, an unwavering commitment to the evolution of the tech domain.
