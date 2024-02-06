@@ -38,6 +38,27 @@ I firmly believe that my multifaceted skills can significantly contribute to mak
 In essence, my transition into cybersecurity is not merely a career shift but a commitment to a cause greater than myself. It's about leveraging my accumulated knowledge and skills to foster a secure, trustworthy digital environment for all. As I embark on this new chapter, I am eager to contribute to and grow within this dynamic field, confronting cybersecurity challenges head-on with diligence, innovation, and a relentless pursuit of excellence.
 
 
+### Portfolio Activity: Conduct a security audit
+_As part of this activity, I will conduct an internal security audit for a possible fictional company.  We will go through some audits to ensure that security checks are made, to monitor for threats, risks, or vulnerabilities that can affect an organization’s business continuity and critical assets. Below you will find the scenario in which we will operate and the information available that we will use to do the audit._
+
+
+#### Scenario
+```
+This scenario is based on a fictional company:
+
+Botium Toys is a small U.S. business that develops and sells toys. The business has a single physical location, which serves as its main office, a storefront, and a warehouse for its products. However, Botium Toy’s online presence has grown, attracting customers in the U.S. and abroad. As a result, their information technology (IT) department is under increasing pressure to support their online market worldwide. 
+
+The manager of the IT department has decided that an internal IT audit needs to be conducted. She expresses concerns about not having a solidified plan of action to ensure business continuity and compliance, as the business grows. She believes an internal audit can help better secure the company’s infrastructure and help them identify and mitigate potential risks, threats, or vulnerabilities to critical assets. The manager is also interested in ensuring that they comply with regulations related to internally processing and accepting online payments and conducting business in the European Union (E.U.).   
+
+The IT manager starts by implementing the National Institute of Standards and Technology Cybersecurity Framework (NIST CSF), establishing an audit scope and goals, listing assets currently managed by the IT department, and completing a risk assessment. The goal of the audit is to provide an overview of the risks and/or fines that the company might experience due to the current state of its security posture.
+
+Your task is to review the IT manager’s scope, goals, and risk assessment report. Then, perform an internal audit by completing a controls and compliance checklist.
+```
+##### Links
+- [Botium Toys: Scope, goals, and risk assessment report](https://docs.google.com/document/d/1v8XgP7VwybnoYnQ5cOQbHGLBSzCEbMM-mnc-pWXt8fg/edit)
+
+- [Control categories](https://docs.google.com/document/d/1uCWs3VMdBhKpvh1SiQpIUV7UbwqjjTdyq3BM5sE1ha8/edit?resourcekey=0-eGGZrOWC_UXvyZ_FVn2rBw)
+
 
  
 
