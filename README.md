@@ -60,7 +60,170 @@ Your task is to review the IT manager’s scope, goals, and risk assessment repo
 - [Control categories](https://docs.google.com/document/d/1uCWs3VMdBhKpvh1SiQpIUV7UbwqjjTdyq3BM5sE1ha8/edit?resourcekey=0-eGGZrOWC_UXvyZ_FVn2rBw)
 
 
+#### How we will conduct the Audit
+First of all, we will conduct the next step of the security audit by completing the controls and compliance checklist. 
+
+ Then we will review the scope, goals, and risk assessment report details, with a focus on:
+
+- The assets currently managed by the IT department
+
+- The bullet points under “Additional comments” in the Risk Assessment section
+
+We will consider information provided in the scenario, the scope, goals, and risk assessment report, as well as details provided in other documents linked within the checklist. 
+
+Then, we will review the questions in the controls and compliance sections of the checklist and select “yes” or “no” to answer the question in each section (note: the recommendations section is optional).*
+
+Below you will find a general plan of how we want to proceed with setting up a step-by-step approach:
+
+1. Define the Scope of the Audit
+Identify which systems, networks, and data are critical to the organization.
+Determine the audit's boundaries within the organization's infrastructure, including cloud services, on-premises systems, and third-party services.
+2. Review Current Security Policies and Procedures
+Examine existing security policies, procedures, and standards to assess their adequacy and compliance with industry best practices and regulations.
+Evaluate the alignment of security policies with the organization's business objectives and risk management strategy.
+3. Assess Risk Management Practices
+Perform a risk assessment to identify potential threats and vulnerabilities.
+Prioritize risks based on their potential impact on the organization and the likelihood of occurrence.
+4. Examine Technical Controls
+Evaluate the implementation and effectiveness of technical controls such as firewalls, intrusion detection systems, encryption, and access controls.
+Check for security updates, patches, and configuration management practices.
+5. Evaluate Physical Security Measures
+Assess physical access controls to sensitive areas, data centres, and other critical infrastructure.
+Review security measures for preventing unauthorized access, such as surveillance systems, locks, and security personnel.
+6. Analyze Incident Response and Recovery Plans
+Review the organization's incident response plan for completeness and effectiveness.
+Examine the disaster recovery and business continuity plans to ensure they are up-to-date and actionable.
+7. Conduct Security Awareness and Training Review
+Assess the effectiveness of the security awareness and training programs.
+Determine if employees are aware of their security responsibilities and the procedures for reporting security incidents.
+8. Perform Vulnerability Scans and Penetration Tests
+Use vulnerability scanning tools to identify weaknesses in the network and systems.
+Consider conducting a penetration test to simulate an attack on the network and evaluate the effectiveness of security measures.
+9. Review Access Controls and User Privileges
+Assess the process for granting, reviewing, and revoking access to systems and data.
+Ensure that the principle of least privilege is being followed, with users having only the access necessary to perform their job functions.
+10. Compile Audit Findings and Recommend Improvements
+Document all findings, including any vulnerabilities, gaps in policies, or areas of non-compliance.
+Provide recommendations for addressing identified issues and improving the organization's overall security posture.
+11. Present Findings to Management
+Prepare a detailed report or presentation for senior management.
+Highlight critical vulnerabilities and risks, and recommend strategic actions to mitigate these threats.
+
+#### Audit Checklist
+
+**Administrative/Managerial Controls**
+- Least Privilege & Separation of Duties
+
+ - [ ] Verify if access controls are implemented to enforce least privilege.
+ - [ ] Check for separation of duties to minimize risk from insider threats.
+
+- Disaster Recovery Plans
+
+ - [ ] Assess the existence and completeness of disaster recovery plans.
  
+- Password & Access Control Policies
+
+- [ ] Review password policies for adherence to minimum complexity requirements.
+- [ ] Examine access control policies for proper authorization mechanisms.
+
+- Account Management Policies
+
+ - [ ] Evaluate procedures for account creation, modification, and termination.
+
+**Technical Controls**
+
+- Firewall & IDS/IPS
+
+ - [ ] Confirm the firewall is configured to block unwanted traffic effectively.
+ - [ ] Determine if an IDS/IPS is installed and functioning to detect/prevent threats.
+
+- Encryption & Backups
+
+ - [ ] Check if encryption is used to protect sensitive data, especially customer information.
+ - [ ] Verify the existence of backups for critical data and their regular testing.
+
+- Password Management & Antivirus Software
+
+ - [ ] Assess the password management system for enforcing policy compliance.
+ - [ ] Ensure antivirus software is up-to-date and actively monitored.
+
+- Manual Monitoring & Maintenance
+
+ - [ ] Review schedules and procedures for monitoring and maintaining legacy systems.
+
+**Physical/Operational Controls**
+
+- Physical Security Measures
+  
+ - [ ] Inspect physical access controls to sensitive areas and data storage locations.
+ - [ ] Evaluate the effectiveness of CCTV, locks, and fire detection/prevention systems.
+
+**Compliance Checklist**
+
+- Data Protection Regulations
+
+ - [ ] Verify compliance with U.S. and E.U. data protection regulations, focusing on customer PII/SPII and cardholder data.
+ - [ ] Check for mechanisms to notify E.U. customers within 72 hours of a security breach.
+
+- Online Payment Standards
+
+ - [ ] Assess compliance with standards for processing and storing online payments.
+
+
+Now to be even more specific I will review the questions in the controls and compliance sections of the checklist and I will select “yes” or “no” to answer the question in each section and to have a better visual report for the stakeholders.
+
+**Administrative/Managerial Controls**
+- Least Privilege & Separation of Duties
+  - [No] Adequate implementation of least privilege and separation of duties is not confirmed, as all employees have access to sensitive data.
+
+- Disaster Recovery Plans
+  - [No] No disaster recovery plans are currently in place, indicating a significant gap in business continuity planning.
+
+- Password & Access Control Policies
+  -[No] The existing password policy does not meet current minimum complexity requirements, indicating a need for improvement.
+
+- Account Management Policies
+  -[No] Without a centralized password management system and clear procedures for account lifecycle management, it's likely that account management policies are not fully effective.
+
+**Technical Controls**
+
+- Firewall & IDS/IPS
+  -[Yes] A firewall is in place with defined security rules.
+  -[No] An intrusion detection system (IDS) has not been installed.
+
+- Encryption & Backups
+  -[No] Encryption is not currently used for customer credit card information, posing a significant risk to data confidentiality.
+  -[No] There are no backups of critical data, which is crucial for recovery efforts.
+
+-Password Management & Antivirus Software
+ -[No] The absence of a centralized password management system suggests inadequate password management.
+ -[Yes] Antivirus software is installed and regularly monitored.
+
+- Manual Monitoring & Maintenance
+  -[No] There is no regular schedule for monitoring and maintaining legacy systems, increasing the risk of vulnerabilities.
+
+**Physical/Operational Controls**
+
+- Physical Security Measures
+  -[Yes] Adequate physical security measures are in place, including locks, CCTV, and fire detection/prevention systems.
+
+**Compliance Checklist**
+
+- Data Protection Regulations
+  -[No] Compliance with U.S. and E.U. data protection regulations is not fully assured, especially regarding customer PII/SPII and encryption of credit card information.
+
+- Online Payment Standards
+  -[No] The lack of encryption for credit card information indicates non-compliance with standards for processing and storing online payments.
+
+**Recommendations (Optional)**
+Based on the checklist outcomes, I am recommending a few points to cover the gaps identified:
+
+- Implement an IDS/IPS to enhance network security and threat detection.
+- Develop and test disaster recovery plans to ensure business continuity.
+- Strengthen password policies and implement a centralized password management system.
+- Encrypt sensitive customer data, including credit card information, to comply with data protection regulations.
+- Establish regular backups of critical data to facilitate recovery efforts.
+- Schedule regular maintenance for legacy systems to mitigate risks associated with outdated technology.
 
 
 
