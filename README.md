@@ -225,5 +225,115 @@ Based on the checklist outcomes, I am recommending a few points to cover the gap
 - Establish regular backups of critical data to facilitate recovery efforts.
 - Schedule regular maintenance for legacy systems to mitigate risks associated with outdated technology.
 
+# Portfolio Activity Analyze network layer communication
+_In this activity, you will analyze DNS and ICMP traffic in transit using data from a network protocol analyzer tool. You will identify which network protocol was utilized in assessment of the cybersecurity incident. 
 
+In the internet layer of the TCP/IP model, the IP formats data packets into IP datagrams. The information provided in the datagram of an IP packet can provide security analysts with insight into suspicious data packets in transit.
+
+Knowing how to identify potentially malicious traffic on a network can help cybersecurity analysts assess security risks on a network and reinforce network security._
+
+## Scenario
+You are a cybersecurity analyst working at a company that specializes in providing IT services for clients. Several customers of clients reported that they were not able to access the client company website www.yummyrecipesforme.com, and saw the error “destination port unreachable” after waiting for the page to load. 
+
+You are tasked with analyzing the situation and determining which network protocol was affected during this incident. To start, you attempt to visit the website and you also receive the error “destination port unreachable.” To troubleshoot the issue, you load your network analyzer tool, tcpdump, and attempt to load the webpage again. To load the webpage, your browser sends a query to a DNS server via the UDP protocol to retrieve the IP address for the website's domain name; this is part of the DNS protocol. Your browser then uses this IP address as the destination IP for sending an HTTPS request to the web server to display the webpage  The analyzer shows that when you send UDP packets to the DNS server, you receive ICMP packets containing the error message: “udp port 53 unreachable.” 
+
+log from tcpdump packet data
+In the tcpdum log, you find the following information:
+
+![image](https://github.com/Nazgulbunny/Cyber-Security-Portfolio/assets/8020503/74fedf77-75f3-49f3-8bdb-7cc68682e67b)
+
+
+The first two lines of the log file show the initial outgoing request from your computer to the DNS server requesting the IP address of yummyrecipesforme.com. This request is sent in a UDP packet.
+
+The third and fourth lines of the log show the response to your UDP packet. In this case, the ICMP 203.0.113.2 line is the start of the error message indicating that the UDP packet was undeliverable to port 53 of the DNS server.
+
+In front of each request and response, you find timestamps that indicate when the incident happened. In the log, this is the first sequence of numbers displayed: 13:24:32.192571. This means the time is 1:24 p.m., 32.192571 seconds.
+
+After the timestamps, you will find the source and destination IP addresses. In the first line, where the UDP packet travels from your browser to the DNS server, this information is displayed as: 192.51.100.15.52444 > 203.0.113.2.domain. The IP address to the left of the greater than (>) symbol is the source address, which in this example is your computer’s IP address. The IP address to the right of the greater than (>) symbol is the destination IP address. In this case, it is the IP address for the DNS server: 203.0.113.2.domain. For the ICMP error response, the source address is 203.0.113.2 and the destination is your computers IP address 192.51.100.15.52444.
+
+After the source and destination IP addresses, there can be a number of additional details like the protocol, port number of the source, and flags. In the first line of the error log, the query identification number appears as: 35084. The plus sign after the query identification number indicates there are flags associated with the UDP message. The "A?" indicates a flag associated with the DNS request for an A record, where an A record maps a domain name to an IP address. The third line displays the protocol of he response message to the browser: "ICMP," which is followed by an ICMP error message
+
+The error message, "udp port 53 unreachable" is mentioned in the last line. Port 53 is a port for DNS service. The word "unreachable" in the message indicates the UDP message requesting an IP address for the domain "www.yummyrecipesforme.com" did not go through to the DNS server because no service was listening on the receiving DNS port.
+
+The remaining lines in the log indicate that ICMP packets were sent two more times, but the same delivery error was received both times. 
+
+Now that you have captured data packets using a network analyzer tool, it is your job to identify which network protocol and service were impacted by this incident. Then, you will need to write a follow-up report. 
+
+As an analyst, you can inspect network traffic and network data to determine what is causing network-related issues during cybersecurity incidents. Later in this course, you will demonstrate how to manage and resolve incidents. For now, you only need to analyze the situation. 
+
+This event, in the meantime, is being handled by security engineers after you and other analysts have reported the issue to your direct supervisor. 
+
+
+### Provide a summary of the problem found in the tcpdump log and Explain your analysis of the data and provide one solution to implement 
+
+#### Cybersecurity Incident Report: Network Traffic Analysis
+
+_Part 1: Summary of the Problem Found in the DNS and ICMP Traffic Log_
+
+Summary of Tcpdump Log Analysis:
+- The tcpdump log analysis reveals that there was a problem with DNS queries sent from the user's computer to the DNS server. The user's attempts to access the website www.yummyrecipesforme.com resulted in the error message "destination port unreachable." This error was specifically related to UDP port 53, which is used for DNS services. The log shows outgoing UDP packets from the user's computer to the DNS server requesting the IP address for the website's domain. However, the response was an ICMP packet indicating that UDP port 53 was unreachable on the DNS server.
+
+Protocols Used:
+- UDP (User Datagram Protocol): Used for sending the DNS query from the browser to the DNS server.
+- ICMP (Internet Control Message Protocol): Used to return error messages to the sender, in this case, indicating that the destination port (53) was unreachable.
+
+Indications in the Log:
+- Initial requests for the domain's IP address were made via UDP to port 53 of the DNS server.
+- ICMP error messages were received in response, indicating the port was unreachable.
+
+Issues Found:
+- The "udp port 53 unreachable" error indicates a failure in DNS resolution, as the DNS server did not respond to the query on the expected port. This could imply several issues, such as network configuration errors, DNS server problems, or network security devices (like firewalls) blocking the traffic.
+
+_Part 2: Analysis and Cause of the Incident_
+
+Time Incident Occurred:
+- The problem was first reported based on the timestamp in the tcpdump log at 1:24 p.m.
+
+Awareness of the Incident:
+- The IT team became aware of the incident after several customers and internal attempts to access the client's website resulted in the "destination port unreachable" error message.
+
+Investigation Actions:
+- To investigate, the IT department utilized network analyzer tools like tcpdump to capture and analyze the network traffic while attempting to access the website.
+
+Key Findings:
+
+- The affected port was UDP port 53, crucial for DNS queries.
+- ICMP packets indicated that the port was unreachable, which suggests a communication issue between the user's computer and the DNS server.
+- The DNS server's IP address was identified in the log, but there was no successful communication.
+
+Likely Cause of the Incident:
+- The most likely cause of the incident is a configuration issue or a fault at the DNS server preventing it from responding to queries on port 53. Another possibility could be network security measures (like a firewall) mistakenly blocking UDP traffic to port 53.
+
+Summary of Problem:
+- The problem involves the inability of DNS queries to reach the intended DNS server on the expected port (UDP port 53), resulting in an error message indicating that the destination port is unreachable. This failure in DNS resolution prevented access to the website www.yummyrecipesforme.com. The issue was highlighted by ICMP error responses to the DNS query attempts, pointing towards a disruption in normal DNS operation, potentially due to server issues or network configuration/firewall settings blocking the required port.
+
+
+#### Cybersecurity Incident Report: Detailed Analysis and Solution Implementation
+
+When the Problem Was First Reported:
+- The issue was first observed and reported at 1:24 p.m., as indicated by the timestamp in the tcpdump log during the attempt to access the website www.yummyrecipesforme.com.
+
+Scenario, Events, and Symptoms:
+- Customers and internal users attempting to access the client company's website were met with the error message “destination port unreachable” after a significant delay. This prompted an investigation using network analysis tools, which revealed ICMP error messages related to DNS queries.
+
+Current Status of the Issue:
+- As of the last update, the website remains inaccessible to users, with DNS resolution being the identified bottleneck due to UDP port 53 being unreachable. Engeneering team is working on the issue to recover the service.
+
+Information Discovered:
+- The DNS queries from the user’s browser to the DNS server were made using UDP protocol, specifically targeting port 53, which is standard for DNS requests.
+ICMP packets were returned with error messages stating "udp port 53 unreachable," indicating that the queries could not be processed by the DNS server.
+Repeated attempts to query the DNS server resulted in the same ICMP error response, confirming the issue's persistence.
+
+Next Steps in Troubleshooting and Resolving the Issue:
+- Verify Network Configuration: Ensure that the network settings, including firewalls and router configurations, are correctly set to allow UDP traffic on port 53.
+- Contact DNS Server Administrator: If the network configuration is not at fault, the problem may lie with the DNS server itself. The server administrator should be contacted to check for any issues or misconfigurations preventing it from responding to queries on port 53.
+- DNS Server Logs: Review the logs of the DNS server to identify any internal errors or blocks that might be causing the issue.
+- Alternative DNS Server: Temporarily use an alternative DNS server for resolving domain names to verify if the issue is isolated to the specific DNS server in question.
+- Firewall and IDS/IPS Check: Inspect firewall and Intrusion Detection/Prevention Systems (IDS/IPS) logs to identify any rules that may inadvertently block DNS queries or responses.
+
+Suspected Root Cause:
+- The primary suspected cause for the ICMP error messages and the subsequent failure in DNS resolution is a disruption in the DNS server’s ability to receive or process queries on UDP port 53. This disruption could be due to misconfiguration, server failure, or network security appliances (such as firewalls) improperly blocking the necessary traffic. The specificity of the error to port 53, used for DNS, and the nature of the ICMP messages points towards these areas as the focal points for resolution efforts.
+
+Proposed Solution:
+- To address the identified issues, the immediate step should involve verifying and adjusting firewall settings to ensure UDP traffic on port 53 is allowed. Concurrently, engaging with the DNS server administrators to ensure the server is operational and correctly configured to handle queries is crucial. If the server is found to be at fault, necessary repairs or configuration adjustments should be implemented. In the longer term, establishing monitoring and alerting for similar incidents can facilitate quicker detection and resolution of DNS-related issues.
 
