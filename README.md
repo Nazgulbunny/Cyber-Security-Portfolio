@@ -337,3 +337,71 @@ Suspected Root Cause:
 Proposed Solution:
 - To address the identified issues, the immediate step should involve verifying and adjusting firewall settings to ensure UDP traffic on port 53 is allowed. Concurrently, engaging with the DNS server administrators to ensure the server is operational and correctly configured to handle queries is crucial. If the server is found to be at fault, necessary repairs or configuration adjustments should be implemented. In the longer term, establishing monitoring and alerting for similar incidents can facilitate quicker detection and resolution of DNS-related issues.
 
+
+# Porfolio Activity: Analyze network attacks
+_In this activity, you will consider a scenario involving a customer of the company that you work for who experiences a security issue when accessing the company’s website. You will  identify the likely cause of the service interruption. Then, you will explain how the attack occurred and the negative impact it had on the website. 
+
+In this course, you have learned about several common network attacks. You have learned their names, how they are carried out, and the characteristics of each attack from the perspective of the target. Understanding how attacks impact a network will help you troubleshoot issues on your organization’s network. It will also help you take steps to mitigate damage and protect a network from future attacks_
+## Scenario
+You work as a security analyst for a travel agency that advertises sales and promotions on the company’s website. The employees of the company regularly access the company’s sales webpage to search for vacation packages their customers might like. 
+
+One afternoon, you receive an automated alert from your monitoring system indicating a problem with the web server. You attempt to visit the company’s website, but you receive a connection timeout error message in your browser.
+
+You use a packet sniffer to capture data packets in transit to and from the web server. You notice a large number of TCP SYN requests coming from an unfamiliar IP address. The web server appears to be overwhelmed by the volume of incoming traffic and is losing its ability to respond to the abnormally large number of SYN requests. You suspect the server is under attack by a malicious actor. 
+
+You take the server offline temporarily so that the machine can recover and return to a normal operating status. You also configure the company’s firewall to block the IP address that was sending the abnormal number of SYN requests. You know that your IP blocking solution won’t last long, as an attacker can spoof other IP addresses to get around this block. You need to alert your manager about this problem quickly and discuss the next steps to stop this attacker and prevent this problem from happening again. You will need to be prepared to tell your boss about the type of attack you discovered and how it was affecting the web server and employees.
+
+### Cybersecurity Incident Report
+Section 1: Identify the type of attack that may have caused this network interruption
+- One potential explanation for the website's connection timeout error message is a SYN flood attack. This type of Denial-of-Service (DoS) attack involves sending a large volume of TCP SYN requests to a target server from one or more sources. It is designed to exploit the normal TCP three-way handshake process, overwhelming the server's resources and preventing it from responding to legitimate traffic.
+
+Section 2: Explain how the attack is causing the website to malfunction
+- The client sends a SYN (synchronize) packet to the server to initiate a connection.
+- The server responds with a SYN-ACK (synchronize-acknowledge) packet to acknowledge the connection request.
+- The client sends an ACK (acknowledge) packet back to the server to complete the connection, establishing a TCP session.
+- When a malicious actor sends a large number of SYN packets all at once without completing the handshake with ACKs, the server allocates resources for each SYN received, waiting for the final ACK. As these ACKs never arrive, the server's resources get exhausted, preventing it from handling legitimate requests. The logs indicate an abnormal amount of incomplete TCP connections, suggesting a SYN flood attack, leading to the server's inability to process genuine user requests, resulting in timeouts and service disruption.
+
+### Identify the type of Attack causing this network interruption 
+- Reflect on the types of network intrusion attacks that you have learned about in this course so far. As a security analyst, identifying the type of network attack based on the incident is the first step to managing the attack and preventing similar attacks in the future._ 
+
+_Here are some questions to consider when determining what type of attack occurred:_ 
+
+- What do you currently understand about network attacks?
+
+- Which type of attack would likely result in the symptoms described in the scenario? 
+
+- What is the difference between a denial of service (DoS) and distributed denial of service (DDoS)? 
+
+- Why is the website taking a long time to load and reporting a connection timeout error?
+
+_Review the Wireshark logs provided and try to identify patterns in the logged network traffic. Analyze the patterns to determine which type of network attack occurred. Write your analysis in section one of the Cybersecurity incident report template provided_ 
+
+In the context of network attacks, my understanding encompasses the various tactics and methodologies attackers use to compromise, disrupt, or gain unauthorized access to network resources. The scenario described points to a Denial-of-Service (DoS) attack, specifically a SYN flood attack, which involves overwhelming a server with TCP SYN requests to exhaust its resources, preventing legitimate requests from being processed.
+
+The difference between a DoS and a Distributed Denial of Service (DDoS) attack lies in the source of the attack; a DoS attack originates from a single source, while a DDoS attack involves multiple compromised sources (or bots) targeting a single system, making it more difficult to mitigate.
+
+The website is taking a long time to load and reporting a connection timeout error because the server is overwhelmed with illegitimate SYN requests, consuming all its available resources to handle genuine traffic, leading to service unavailability for legitimate users.
+
+### Explain how the attack is causing the website to malfunction
+_Review the Wireshark logs, then write your analysis in section two of the Cybersecurity incident report template provided._
+
+_When writing your report, discuss the network devices and activities that are involved in the interruption. Include the following information in your explanation:_
+
+- Describe the attack. What are the main symptoms or characteristics of this specific type of attack? 
+
+- Explain how it affected the organization’s network. How does this specific network attack affect the website and how it functions?
+
+- Describe the potential consequences of this attack and how it negatively affects the organization. 
+
+- Optional: Suggest potential ways to secure the network so this attack can be prevented in the future.
+
+
+The attack is a SYN flood, a type of DoS attack characterized by an excessive number of SYN requests sent to a target server. Main symptoms include an unusually high volume of incoming SYN packets, server resources being quickly exhausted, and a significant reduction in the server's ability to process legitimate requests, leading to service disruption.
+
+
+The SYN flood attack overwhelmed the organization's web server, consuming its resources and preventing it from responding to legitimate traffic. This resulted in the website taking a long time to load or becoming completely inaccessible to users, directly impacting the website's functionality and availability.
+
+Consequences of the attack include operational disruptions, loss of customer trust, potential revenue loss, and damage to the organization's reputation. It may also lead to increased operational costs due to the need for emergency response measures and long-term security enhancements.
+
+To prevent future SYN flood attacks, the organization can implement rate limiting, SYN cookies, and IP filtering. Employing a robust firewall and intrusion detection system (IDS) that specifically looks for patterns associated with SYN flood attacks can also help. Additionally, investing in DDoS mitigation services can provide another layer of protection by identifying and neutralizing such attacks before they reach the server.
+
