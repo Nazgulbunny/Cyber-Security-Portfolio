@@ -481,3 +481,36 @@ A disgruntled baker executed a brute force attack on yummyrecipesforme.com, succ
 3. Remediation for Brute Force Attacks:
 To prevent future brute force attacks, it is recommended to enforce strong password policies. This includes requirements for complex passwords that combine letters, numbers, and special characters, and mandate regular password changes. Strong passwords significantly reduce the risk of unauthorized access through brute force attacks by increasing the time and computational resources required to guess them. Implementing a policy that requires passwords to be of a certain length and complexity can deter attackers and protect sensitive information from unauthorized access. Another suggestion would be to implement multifactor authentication to add a layer of security for non-authorized admin users 
 
+# Activity: Analysis of network hardening
+_In this activity, you will be presented with a scenario about a social media organization that recently experienced a major data breach caused by undetected vulnerabilities. To address the breach, you will identify some common network hardening tools that can be implemented to protect the organization’s overall security. Then, you will select a specific vulnerability that the company has and propose different network hardening methods. Finally, you will explain how the methods and tools you chose will be effective for managing the vulnerability and how they will prevent potential breaches in the future._
+
+## Scenario
+You are a security analyst working for a social media organization. The organization recently experienced a major data breach, which compromised the safety of their customers’ personal information, such as names and addresses. Your organization wants to implement strong network hardening practices that can be performed consistently to prevent attacks and breaches in the future. 
+
+After inspecting the organization’s network, you discover four major vulnerabilities. The four vulnerabilities are as follows:
+
+The organization’s employees' share passwords.
+
+The admin password for the database is set to the default.
+
+The firewalls do not have rules in place to filter traffic coming in and out of the network.
+
+Multifactor authentication (MFA) is not used. 
+
+If no action is taken to address these vulnerabilities, the organization is at risk of experiencing another data breach or other attacks in the future. 
+
+In this activity, you will write a security risk assessment to analyze the incident and explain what methods can be used to further secure the network.
+
+### Risk Assessment 
+#### Part 1: Select up to three hardening tools and methods to implement
+Based on the vulnerabilities identified in your organization's network, the most effective network-hardening tools and methods to implement that I would suggest implementing are 
+- Baseline Configurations: This method should be reviewed and updated regularly, at least quarterly, or whenever significant changes to the network or its threat environment occur.
+- Disabling Unused Ports: The review and disabling of unused ports should be conducted regularly, as part of routine network maintenance, to ensure new vulnerabilities are not introduced.
+- Firewall Maintenance: Firewall maintenance should be a continuous process, with reviews and updates at least monthly or whenever significant network changes occur, to ensure the firewall effectively protects against the latest threats.
+#### Part 2: Explain your recommendations
+- Baseline configurations serve as a critical foundation for network security by ensuring that all systems conform to a recognized secure standard. This practice is especially effective in preventing unauthorized changes that could introduce vulnerabilities. Regular updates and reviews of the baseline configurations are essential to adapt to new threats and changes within the network environment. This method is effective as it establishes a secure, standard configuration for all systems and devices. By having a known secure baseline, any deviations or unauthorized changes can be quickly identified and rectified, helping to prevent security breaches related to improper configurations.
+- Disabling unused ports directly mitigates the risk posed by insufficient firewall configurations. By eliminating unnecessary access points, the organization can significantly lower the chances of unauthorized access and potential breaches. This task requires ongoing vigilance to ensure that as new services are added or removed, the network's exposure to potential attacks remains minimized. This method significantly reduces the risk of unauthorized access and data breaches by limiting the number of entry points into the network that can be exploited. It directly addresses the vulnerability related to insufficient firewall rules.
+- Firewall Maintenance is crucial for continuously adapting the organization's defences to the evolving threat landscape. Regularly updating firewall rules ensures that the network's protective measures remain effective against new types of attacks and unauthorized access attempts. This proactive approach is essential for maintaining the integrity and confidentiality of the network and customer data. Regular maintenance of firewalls directly addresses the vulnerability associated with the lack of rules to filter traffic. By continuously updating and auditing firewall rules, the organization can ensure that only legitimate traffic is allowed, significantly reducing the risk of malicious access and data breaches.
+
+  
+
