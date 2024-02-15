@@ -545,6 +545,12 @@ Respond to contain, neutralize, and analyze security incidents; implement improv
 Recover affected systems to normal operation and restore systems data and/or assets that have been affected by an incident. 
 
 ### Incident Report Using Nist Framework
+
+#### Summary
+The incident involved a DDoS attack on a multimedia company's network via an influx of ICMP packets, causing service disruption. The cybersecurity team responded by blocking ICMP packets and restoring critical services. Investigation revealed the attack was facilitated by a misconfigured firewall. Measures such as rate-limiting ICMP packets, verifying source IP addresses, and enhancing network monitoring and IDS/IPS systems were implemented. The response strategy included disabling compromised accounts, training staff on security practices, informing management and customers, and legal compliance. Recovery efforts focused on data restoration from backups, with a notification to staff regarding data re-entry requirements
+
+#### Nist Framework Incident Report
+
 Identify: Conduct regular audits to identify vulnerabilities within the network, systems, and firewall configurations. This includes inventorying assets and assessing access controls to uncover any security gaps that could be exploited in future attacks.
 - Technology/Asset Management: Identify all hardware devices (servers, routers, switches), operating systems (Windows, Linux, etc.), and software applications (email, CRM, website services) impacted by the DDoS attack. Map the internal network to understand the attack's flow, pinpointing where the ICMP flood began and how it propagated through the network.
 
