@@ -512,5 +512,71 @@ Based on the vulnerabilities identified in your organization's network, the most
 - Disabling unused ports directly mitigates the risk posed by insufficient firewall configurations. By eliminating unnecessary access points, the organization can significantly lower the chances of unauthorized access and potential breaches. This task requires ongoing vigilance to ensure that as new services are added or removed, the network's exposure to potential attacks remains minimized. This method significantly reduces the risk of unauthorized access and data breaches by limiting the number of entry points into the network that can be exploited. It directly addresses the vulnerability related to insufficient firewall rules.
 - Firewall Maintenance is crucial for continuously adapting the organization's defences to the evolving threat landscape. Regularly updating firewall rules ensures that the network's protective measures remain effective against new types of attacks and unauthorized access attempts. This proactive approach is essential for maintaining the integrity and confidentiality of the network and customer data. Regular maintenance of firewalls directly addresses the vulnerability associated with the lack of rules to filter traffic. By continuously updating and auditing firewall rules, the organization can ensure that only legitimate traffic is allowed, significantly reducing the risk of malicious access and data breaches.
 
+  # Portfolio Activity: Use the NIST Cybersecurity Framework to respond to a security incident
+  _In this activity, you will use the knowledge you’ve gained about networks throughout this course to analyze a network incident. You will analyze the situation using the National Institute of Standards and Technology's Cybersecurity Framework (NIST CSF) and create an incident report that you can include as part of your cybersecurity portfolio documentation. The CSF is a voluntary framework that consists of standards, guidelines, and best practices to manage cybersecurity risk.Creating a quality cybersecurity incident report and applying the CSF can help you build trust and improve security practices within your organization_
+
+  ## Scenario
+  You are a cybersecurity analyst working for a multimedia company that offers web design services, graphic design, and social media marketing solutions to small businesses. Your organization recently experienced a DDoS attack, which compromised the internal network for two hours until it was resolved.
+
+During the attack, your organization’s network services suddenly stopped responding due to an incoming flood of ICMP packets. Normal internal network traffic could not access any network resources. The incident management team responded by blocking incoming ICMP packets, stopping all non-critical network services offline, and restoring critical network services. 
+
+The company’s cybersecurity team then investigated the security event. They found that a malicious actor had sent a flood of ICMP pings into the company’s network through an unconfigured firewall. This vulnerability allowed the malicious attacker to overwhelm the company’s network through a distributed denial of service (DDoS) attack. 
+
+To address this security event, the network security team implemented: 
+
+A new firewall rule to limit the rate of incoming ICMP packets
+
+Source IP address verification on the firewall to check for spoofed IP addresses on incoming ICMP packets
+
+Network monitoring software to detect abnormal traffic patterns
+
+An IDS/IPS system to filter out some ICMP traffic based on suspicious characteristics
+
+As a cybersecurity analyst, you are tasked with using this security event to create a plan to improve your company’s network security, following the National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF). You will use the CSF to help you navigate through the different steps of analyzing this cybersecurity incident and integrate your analysis into a general security strategy:
+
+Identify security risks through regular audits of internal networks, systems, devices, and access privileges to identify potential gaps in security. 
+
+Protect internal assets through the implementation of policies, procedures, training and tools that help mitigate cybersecurity threats. 
+
+Detect potential security incidents and improve monitoring capabilities to increase the speed and efficiency of detections. 
+
+Respond to contain, neutralize, and analyze security incidents; implement improvements to the security process. 
+
+Recover affected systems to normal operation and restore systems data and/or assets that have been affected by an incident. 
+
+### Incident Report Using Nist Framework
+Identify: Conduct regular audits to identify vulnerabilities within the network, systems, and firewall configurations. This includes inventorying assets and assessing access controls to uncover any security gaps that could be exploited in future attacks.
+- Technology/Asset Management: Identify all hardware devices (servers, routers, switches), operating systems (Windows, Linux, etc.), and software applications (email, CRM, website services) impacted by the DDoS attack. Map the internal network to understand the attack's flow, pinpointing where the ICMP flood began and how it propagated through the network.
+
+- Process/Business Environment: Determine which business operations were most affected by the network downtime. This could include email communications, client-facing web services, access to internal databases, or use of design software. Assess the impact on service delivery to clients, especially those reliant on timely updates or project completions.
+
+- People: Identify the roles within the organization that require access to the compromised systems for their daily operations. This includes IT staff, web designers, graphic artists, and social media managers. Consider the level of access each role requires and whether current permissions are appropriate or need adjustments to minimize risk.
+
+Protect: Strengthen firewall configurations to limit ICMP traffic and enforce source IP address verification to deter IP spoofing. Implement comprehensive policies and training programs to mitigate cybersecurity threats. Upgrade tools and processes to safeguard against unauthorized access and potential attacks.
+- Access Control: Implement strict access controls to ensure only authorized personnel have access to sensitive systems and data. Utilize role-based access control (RBAC) to ensure that access rights are aligned with the user's job responsibilities. Employ methods to block non-trusted sources, such as firewall rules, secure VPNs for remote access, and multi-factor authentication (MFA) for system logins.
+
+- Awareness/Training: Develop a comprehensive cybersecurity awareness program for all employees, focusing on recognizing and responding to potential threats like phishing, which could lead to DDoS attacks. Specialized training for IT staff on incident response and the latest cybersecurity practices should also be conducted.
+
+- Data Security: Evaluate the security of data affected by the attack, applying encryption for data at rest and in transit. Implement regular data backups and ensure that they are stored securely off-site or in a cloud environment with proper security controls.
+
+- Information Protection Procedures: Review and update current information protection policies and procedures. This could involve updating incident response plans, data handling protocols, and security policies to incorporate lessons learned from the attack.
+
+- Maintenance: Conduct a thorough review of affected hardware and software to identify any required updates or patches. Regularly schedule maintenance windows to apply updates and patches to prevent vulnerabilities.
+
+- Protective Technology: Enhance protective technologies by deploying advanced firewall configurations, intrusion prevention systems (IPS), and other cybersecurity tools designed to detect and block malicious traffic. Consider technologies like DDoS mitigation services that can protect against large-scale attacks
+
+Detect: Utilize network monitoring software to observe traffic patterns and detect anomalies indicative of a DDoS attack or other malicious activities. Enhance the capabilities of IDS/IPS systems for more effective identification of suspicious ICMP traffic.
+- To enhance detection capabilities, the team will integrate advanced firewall logging tools and an intrusion detection system (IDS). These technologies will monitor all inbound and outbound network traffic, enabling the identification of unusual patterns or potential threats. The firewall's logging capabilities will allow for the analysis of traffic flow, identifying any abnormal spikes that could indicate a DDoS attack. Simultaneously, the IDS will analyze packet signatures against known threat patterns to detect unauthorized access attempts, ensuring swift identification of potential security breaches.
+
+Respond: Develop and refine incident response protocols to ensure timely and effective action in containing and neutralizing threats. This includes isolating affected systems, analyzing the attack's nature and source, and communicating with relevant stakeholders throughout the incident.
+- The response to the incident included immediate action to disable the compromised network account to prevent further unauthorized access. Comprehensive training was provided to both interns and employees, emphasizing the importance of safeguarding login credentials and recognizing phishing attempts. Upper management was promptly informed of the breach, initiating a process to communicate with customers about the incident through mail, in line with transparency and customer trust maintenance. Additionally, management prepared to engage with law enforcement and comply with local regulatory requirements, ensuring a thorough and lawful response to the cybersecurity event.
+
+Recover: Implement procedures for the rapid restoration of affected systems to normal operations, including data recovery strategies. Post-incident, conduct a thorough review to understand the attack's impact fully and take corrective measures to prevent recurrence.
+- The team's recovery strategy involves restoring the affected database from the last full backup conducted the previous night. Staff were informed that any customer data entered or modified in the database on the morning of the attack would not be included in the backup and would need to be re-entered manually. This step ensures the restoration of lost data while acknowledging the gap in data recorded due to the timing of the backup and the incident.
+
+
+
+
+
   
 
