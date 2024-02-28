@@ -580,6 +580,62 @@ The incident involved a DDoS attack on a multimedia company's network via an inf
 **Recover**: Implement procedures for the rapid restoration of affected systems to normal operations, including data recovery strategies. Post-incident, conduct a thorough review to understand the attack's impact fully and take corrective measures to prevent recurrence.
 - The team's recovery strategy involves restoring the affected database from the last full backup conducted the previous night. Staff were informed that any customer data entered or modified in the database on the morning of the attack would not be included in the backup and would need to be re-entered manually. This step ensures the restoration of lost data while acknowledging the gap in data recorded due to the timing of the backup and the incident.
 
+# Portfolio Activity: Use Linux commands to manage file permissions
+
+_In this activity, you will create a new portfolio document to demonstrate your experience using Linux commands to manage file permissions._
+
+## Scenario
+
+Review the scenario below. 
+
+You are a security professional at a large organization. You mainly work with their research team. Part of your job is to ensure users on this team are authorized with the appropriate permissions. This helps keep the system secure. 
+
+Your task is to examine existing permissions on the file system. You’ll need to determine if the permissions match the authorization that should be given. If they do not match, you’ll need to modify the permissions to authorize the appropriate users and remove any unauthorized access.
+
+Note: This scenario involves investigating and updating the same file permissions as the ones in the 
+Manage authorization lab.  You can revisit the lab to get screenshots to include in your portfolio document. If you choose, it's also possible to complete this activity without revisiting the lab by typing your commands in the template.
+
+### File permissions in Linux
+#### Project description
+In this project, we navigate the critical task of managing file and directory permissions within a Linux environment, specifically within the /home/researcher2/projects directory of a large organization. Our objective is to ensure that file permissions align with the organization's security protocols, thereby granting appropriate access to the research team while eliminating any unauthorized access. Through the use of Linux commands, we meticulously review and adjust the permissions of files and directories to safeguard sensitive information and maintain system security.
+
+#### Check file and directory details
+To check the permissions of files and directories, I'll use the ls -l command. This command lists the contents of a directory in a long format, showing detailed information including the permissions.
+`ls -l /home/researcher2/projects`
+The permissions would be represented in the 10-character string format for each file and directory in the way described below:
+
+- project_k.txt would be -rw-rw-rw-
+- project_m.txt would be -rw-r-----
+- project_r.txt would be -rw-rw-r--
+- project_t.txt would be -rw-rw-r--
+- .project_x.txt would be -rw-w-----
+- drafts/ directory would be drwx--x---
+
+#### Describe the permissions string#### Describe the permissions string
+
+Taking the project_k.txt file as an example, its permissions string -rw-rw-rw- can be described as follows:
+
+The first character - indicates it is a regular file.
+The next three characters rw- show the user (owner) has read and write permissions, but not execute permission.
+The following three characters rw- indicate the group has read and write permissions.
+The final three characters rw- reveal that others also have read and write permissions.
+
+#### Change file permissions
+Since the organization does not allow "other" to have write access, project_k.txt needs its permissions modified to remove write access for "other".
+`chmod o-w /home/researcher2/projects/project_k.txt`
+
+#### Change file permissions on a hidden file
+For the .project_x.txt file, since it should only have read permissions for the user and group, and no write permissions for anyone, the following command assigns the appropriate authorization:
+`chmod /home/researcher2/projects/.project_x.txt`
+
+#### Change directory permissions
+To ensure only the researcher2 user can access the drafts directory and its contents, I'll modify the permissions so that only the user has read, write, and execute permissions.
+`chmod /home/researcher2/projects/drafts`
+This command removes all access for the group and others, ensuring exclusive access for the owner, researcher2.
+
+#### Summary
+Throughout this project, I successfully identified and modified file permissions that did not comply with the organization's security policies, specifically addressing concerns related to write access for unauthorized users. We employed Linux commands to adjust permissions on both regular and hidden files, ensuring that only authorized users have the appropriate levels of access. Additionally, we refined the access controls on a critical directory to restrict access solely to the intended user. These actions enhanced the security posture of the organization's file system.
+
 
 
 
