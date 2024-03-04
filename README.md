@@ -636,9 +636,102 @@ This command removes all access for the group and others, ensuring exclusive acc
 #### Summary
 Throughout this project, I successfully identified and modified file permissions that did not comply with the organization's security policies, specifically addressing concerns related to write access for unauthorized users. We employed Linux commands to adjust permissions on both regular and hidden files, ensuring that only authorized users have the appropriate levels of access. Additionally, we refined the access controls on a critical directory to restrict access solely to the intended user. These actions enhanced the security posture of the organization's file system.
 
+# Portfolio Activity: Apply filters to SQL queries
+_In this activity, you will create a new portfolio document to demonstrate your experience using SQL_
+
+## Scenario
+_You are a security professional at a large organization. Part of your job is to investigate security issues to help keep the system secure. You recently discovered some potential security issues that involve login attempts and employee machines.Your task is to examine the organization’s data in their employees and log_in_attempts tables. You’ll need to use SQL filters to retrieve records from different datasets and investigate the potential security issues._
+
+### Project Description
+
+In this project, I tackled various security-related challenges within a large organization by leveraging SQL queries to filter through employee and login attempt data. The objective was to identify potential security vulnerabilities and ensure the integrity of the organization's IT infrastructure. Through a series of targeted SQL queries, I was able to investigate suspicious login activities, pinpoint employees for necessary security updates based on their department and office location, and ensure that all non-IT department employees received critical updates. This comprehensive approach allowed for a detailed analysis of security posture and the implementation of measures to safeguard sensitive information.
+
+### Retrieve after hours failed login attempts
+`SELECT *
+FROM log_in_attempts
+WHERE login_time > '18:00:00' AND success = FALSE;`
 
 
+#### How It Works
+SELECT * FROM log_in_attempts: This part of the query selects all columns from the log_in_attempts table. This allows you to review all details of each login attempt that meets your criteria.
+
+WHERE login_time > '18:00:00': This filter condition specifies that you only want to see records where the login_time is later than 18:00:00 (6 PM). This focuses the query on after-hours login attempts, as any login time after 18:00:00 is considered to be outside of regular business hours.
+
+AND success = FALSE: This condition further filters the results to only include unsuccessful login attempts. The success column uses a Boolean value to indicate whether the login attempt was successful. In some databases, you might use 0 instead of FALSE if the column is stored as an integer type that represents Boolean values (with 0 for false and 1 for true). This condition ensures you're only looking at failed login attempts.
+
+Combining these conditions with the AND operator means that a record must meet both criteria to be included in the results: it must be a failed login attempt (success = FALSE) that occurred after 18:00:00.
+
+When you execute this query  it will return all records from the log_in_attempts table that match these conditions, allowing you to investigate each after-hours failed login attempt in detail.
+
+### Retrieve login attempts on specific dates
+`SELECT *
+FROM log_in_attempts
+WHERE login_date = '2022-05-09' OR login_date = '2022-05-08';`
 
 
-  
+#### How it works
+SELECT * FROM log_in_attempts: This selects all columns from the log_in_attempts table, allowing you to review every detail of each login attempt that meets the criteria outlined in the WHERE clause.
 
+WHERE login_date = '2022-05-09' OR login_date = '2022-05-08': This condition filters the records to include only those where the login_date matches either 2022-05-09 or 2022-05-08. The OR operator is used to ensure that the query returns login attempts from both days, not just one or the other.
+
+This query effectively narrows down the dataset to the login attempts of interest, specifically focusing on the days surrounding the suspicious event. 
+
+
+### Retrieve login attempts outside of Mexico
+`SELECT *
+FROM log_in_attempts
+WHERE country NOT LIKE 'MEX%' AND country NOT LIKE 'MEXICO%';`
+
+#### How it works
+SELECT * FROM log_in_attempts: This command selects all columns from the log_in_attempts table to review every detail of each login attempt.
+
+WHERE country NOT LIKE 'MEX%' AND country NOT LIKE 'MEXICO%': This condition filters the records to exclude those where the country column matches any value starting with 'MEX' or 'MEXICO'. The LIKE keyword allows for pattern matching, where '%' is a wildcard character that matches any sequence of characters. The NOT operator is used to invert the condition, so the query selects records where country does not match the specified patterns.
+
+NOT LIKE 'MEX%' ensures that variations starting with 'MEX' (such as 'MEXICO', 'MEXICAN', etc.) are excluded.
+AND ensures that both conditions must be true for a record to be included in the results. However, since 'MEXICO%' is a subset of 'MEX%', the second condition is technically redundant in this specific context but included here for clarity on how to use LIKE with variations.
+This query will return all login attempts where the attempt did not originate from Mexico, helping you to focus on the suspicious activity that occurred from outside the country.
+
+
+### Retrieve employees in Marketing
+`SELECT *
+FROM employees
+WHERE department = 'Marketing'
+AND office LIKE 'East-%';`
+
+
+#### How it works
+SELECT * FROM employees: This command selects all columns from the employees table. This allows you to review all details of each employee that meets the criteria specified in the WHERE clause.
+
+WHERE department = 'Marketing': This condition filters the records to include only those employees who are in the Marketing department. It ensures that the query returns only the relevant employees based on their departmental affiliation.
+
+AND office LIKE 'East-%': This condition further narrows down the selection to those employees whose office location starts with "East-". The LIKE keyword is used for pattern matching, where 'East-%' specifies that the office column value must start with "East-" followed by any sequence of characters. This effectively filters the results to include only those employees located in offices within the East building.
+
+By combining these conditions with the AND operator, the query specifically targets employees who are both in the Marketing department and located in the East building. This allows you to efficiently identify the specific machines that need security updates within that group. 
+
+### Retrieve employees in Finance or Sales
+`SELECT *
+FROM employees
+WHERE department = 'Sales' OR department = 'Finance';`
+
+#### How it works
+SELECT * FROM employees: This part of the query selects all columns from the employees table, which allows you to review comprehensive details about each employee that meets the subsequent criteria.
+
+WHERE department = 'Sales' OR department = 'Finance': This filter condition specifies that you want to include records where the department exactly matches either 'Sales' or 'Finance'. The OR operator is used here to ensure that the query captures employees from both departments, not just one.
+
+This query effectively targets employees belonging to the two specified departments.
+
+#### Retrieve all employees not in IT
+`SELECT *
+FROM employees
+WHERE NOT (department = 'Information Technology');`
+
+#### How it works
+SELECT * FROM employees: This command selects all columns from the employees table, allowing you to review every detail of each employee that meets the criteria specified in the WHERE clause.
+
+WHERE department != 'Information Technology': This filter condition excludes records where the department exactly matches 'Information Technology'. The != operator (or <> in some SQL dialects) is used to select records where the department value is not equal to 'Information Technology'.
+
+Alternatively, WHERE NOT (department = 'Information Technology'): This approach achieves the same outcome by explicitly stating the exclusion of the Information Technology department using the NOT operator around the condition.
+This query will return all employees who are not part of the IT department, enabling your team to identify which machines need the specified update. 
+
+### Summary
+Throughout this project, I demonstrated the practical application of SQL filters to address a range of security concerns within an organizational setting. Initially, I focused on identifying failed login attempts outside of standard business hours and from locations outside of Mexico to pinpoint potential unauthorized access attempts. Subsequently, I used SQL queries to select specific employee groups based on departmental affiliation for targeted security updates, excluding those in the IT department who had already received these updates. This systematic use of SQL queries not only enhanced the organization's security measures but also showcased the versatility and power of SQL in managing and securing enterprise data. Through this project, I illustrated the critical role of data analysis in maintaining and improving organizational security.
