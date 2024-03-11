@@ -735,3 +735,6 @@ This query will return all employees who are not part of the IT department, enab
 
 ### Summary
 Throughout this project, I demonstrated the practical application of SQL filters to address a range of security concerns within an organizational setting. Initially, I focused on identifying failed login attempts outside of standard business hours and from locations outside of Mexico to pinpoint potential unauthorized access attempts. Subsequently, I used SQL queries to select specific employee groups based on departmental affiliation for targeted security updates, excluding those in the IT department who had already received these updates. This systematic use of SQL queries not only enhanced the organization's security measures but also showcased the versatility and power of SQL in managing and securing enterprise data. Through this project, I illustrated the critical role of data analysis in maintaining and improving organizational security.
+
+# Portfolio Activity: Analyze a vulnerable system for a small business
+
