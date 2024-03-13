@@ -737,4 +737,79 @@ This query will return all employees who are not part of the IT department, enab
 Throughout this project, I demonstrated the practical application of SQL filters to address a range of security concerns within an organizational setting. Initially, I focused on identifying failed login attempts outside of standard business hours and from locations outside of Mexico to pinpoint potential unauthorized access attempts. Subsequently, I used SQL queries to select specific employee groups based on departmental affiliation for targeted security updates, excluding those in the IT department who had already received these updates. This systematic use of SQL queries not only enhanced the organization's security measures but also showcased the versatility and power of SQL in managing and securing enterprise data. Through this project, I illustrated the critical role of data analysis in maintaining and improving organizational security.
 
 # Portfolio Activity: Analyze a vulnerable system for a small business
+_In this activity, I will conduct a vulnerability assessment for a small business. A vulnerability assessment is the internal review process of an organization’s security systems. I will evaluate the risks of a vulnerable information system and outline a remediation plan._
 
+## Scenario
+_You are a newly hired cybersecurity analyst for an e-commerce company. The company stores information on a remote database server, since many of the employees work remotely from locations all around the world. Employees of the company regularly query, or request, data from the server to find potential customers. The database has been open to the public since the company's launch three years ago. As a cybersecurity professional, you recognize that keeping the database server open to the public is a serious vulnerability._
+
+_You are tasked with completing a vulnerability assessment of the situation to communicate the potential risks to decision makers at the company. You must create a written report that explains how the vulnerable server is a risk to business operations and how it can be secured._
+
+### Vulnerability Assessment Report
+_13th March 2024_
+#### System Description
+The server hardware consists of a powerful CPU processor and 128GB of memory. It runs on the latest version of Linux operating system and hosts a MySQL database management system. It is configured with a stable network connection using IPv4 addresses and interacts with other servers on the network. Security measures include SSL/TLS encrypted connections.
+#### Scope
+The scope of this vulnerability assessment relates to the current access controls of the system. The assessment will cover a period of three months, from March 2024 to August 2024. NIST SP 800-30 Rev. 1 is used to guide the risk analysis of the information system
+
+#### Purpose Statement 
+The purpose of this vulnerability assessment is to protect and maintain the operational integrity, confidentiality, and availability of our business's database server. By securing the data stored on this server, we aim to prevent unauthorized access, and data breaches, and ensure compliance with relevant regulations, thus safeguarding our competitive position and customer trust. Recognizing the critical role this server plays in our daily operations and strategic decision-making, this analysis is crucial in preventing disruptions that could result in significant financial losses and reputational damage, thereby supporting our organization's goals of resilience and continuous service delivery.
+
+#### Identify potential Threat sources based on the system description, scope, purpose, and insights from NIST SP 800-30 Rev. 1
+*Privileged User Threat*
+
+_Description: Privileged users, such as system administrators, have extensive access rights to the database server and its configurations. While necessary for maintenance and management, this access also poses a risk. Malicious actions or inadvertent errors by privileged users could lead to significant data breaches, unauthorized data alteration, or system downtime. For example, a disgruntled employee with administrative access might intentionally compromise the system's integrity or inadvertently misconfigure security settings, leading to vulnerabilities._
+
+*Outsider Threat*
+
+_Description: Outsiders, including hackers, hacktivists, and Advanced Persistent Threats (APTs), represent a significant risk to the database server. These actors, motivated by financial gain, political agendas, or the challenge of breaching defences, can exploit vulnerabilities to gain unauthorized access, steal sensitive data, or disrupt business operations. For instance, an APT could launch sophisticated, targeted attacks to siphon off critical business intelligence or personal data of customers, resulting in financial loss and reputational damage._
+
+*Software Threat*
+
+_Description: The server's operating system and database management software are fundamental to its operation but can also be sources of vulnerability. Software threats include unpatched security vulnerabilities, zero-day exploits, and malicious software (malware) that can be used to gain unauthorized access, escalate privileges, or execute malicious actions. For example, an unpatched vulnerability in the database software could allow an attacker to inject SQL commands and manipulate or extract data, compromising the confidentiality and integrity of stored information._
+
+#### Identify Potential threats event
+*Unauthorized Access by Privileged Users*
+
+_Threat Event Description: A privileged user might exploit their access rights to gain unauthorized access to sensitive areas of the database server not required for their role. This could be either intentional, as in the case of a disgruntled employee seeking to extract or sabotage data, or accidental, due to negligence or lack of awareness regarding security protocols. The event may involve accessing, copying, or transmitting sensitive data without authorization, leading to a breach of confidentiality and potential data loss._
+
+*External Breach Through Software Vulnerabilities*
+
+_Threat Event Description: Attackers exploit unpatched vulnerabilities or inherent flaws in the software running on the database server. This event can lead to unauthorized access, data exfiltration, or the deployment of malware. Hackers, APTs, or other external parties might use these vulnerabilities to bypass security mechanisms, elevate privileges, or execute malicious code, aiming to steal sensitive data, disrupt operations, or establish a persistent presence on the network._
+
+*Denial of Service (DoS) Attack*
+
+_Threat Event Description: An external party, such as a competitor, hacker, or hacktivist, could launch a DoS attack against the database server. By overwhelming the server with a flood of traffic or exploiting a vulnerability to crash the system, attackers can render the database service unavailable to legitimate users. This event primarily aims to disrupt business operations, causing operational delays, financial loss, and damage to the organization's reputation. Such an attack could be motivated by a desire to harm the company's competitive standing or as a form of protest by hacktivists._
+
+#### Calculate the Risk of Potential Threats
+Let's assess each identified threat event based on the questions and score them according to the Likelihood and Severity, followed by calculating the overall Risk score. The scores range from 1 (Low) to 3 (High).
+
+*1. Unauthorized Access by Privileged Users*
+
+How frequently could this happen? Given that privileged users have constant access to the system, the risk of unauthorized access, whether intentional or accidental, is moderate.
+Would critical business functions be impacted? Yes, unauthorized access could lead to critical data being compromised, affecting business operations and customer trust.
+How might this affect the business and its customers? The business could face legal, financial, and reputational damage, while customers could suffer from privacy breaches and potential financial loss.
+Likelihood Score: 2 (Moderate)
+Severity Score: 3 (High)
+Risk Score: 2 x 3 = 6
+
+*2. External Breach Through Software Vulnerabilities*
+How frequently could this happen? The frequency depends on the public knowledge of the vulnerability and the speed of the response by the IT team. However, with constant scanning by attackers, the likelihood is moderate to high.
+Would critical business functions be impacted? Yes, an external breach could severely impact critical business functions by compromising data integrity and availability.
+How might this affect the business and its customers? Such a breach could lead to significant financial losses, damage to reputation, and erosion of customer trust, especially if sensitive customer data is exposed.
+Likelihood Score: 3 (High)
+Severity Score: 3 (High)
+Risk Score: 3 x 3 = 9
+
+*3. Denial of Service (DoS) Attack*
+How frequently could this happen? DoS attacks are increasingly common, especially for businesses with significant online presences. The likelihood is moderate to high, depending on the visibility of the business and its perceived value as a target.
+Would critical business functions be impacted? Yes, a successful DoS attack would directly impact the availability of the database server, hindering critical business operations and customer transactions.
+How might this affect the business and its customers? The immediate impact would be operational disruption and potential loss of revenue. Customers may experience service unavailability, which could lead to dissatisfaction and loss of trust.
+Likelihood Score: 3 (High)
+Severity Score: 2 (Moderate)
+Risk Score: 3 x 2 = 6
+
+#### Proposed Reccomandations
+In conducting this qualitative vulnerability assessment, the selection of the three specific threat sources/events—Unauthorized Access by Privileged Users, External Breach Through Software Vulnerabilities, and Denial of Service (DoS) Attack—was guided by an analysis of the database server's critical role within the organization and its exposure to both internal and external threat actors. These events were identified as significant business risks due to their potential to compromise the confidentiality, integrity, and availability of critical data, which could result in substantial financial losses, reputational damage, and erosion of customer trust. The evaluation leverages subjective judgment, rooted in security knowledge and understanding of the organization's operational context, to estimate the likelihood and severity of these threats. This approach prioritizes identifying high-level risks that necessitate immediate attention for mitigation and informs strategic decisions on resource allocation and security measures to protect the organization's digital assets and business operations.
+
+#### Proposed Remediation Strategy 
+To remediate or mitigate the risks identified in the vulnerability assessment, several strategic security controls can be implemented. For the risk of Unauthorized Access by Privileged Users, enforcing the Principle of Least Privilege through rigorous access control policies ensures that users have only the access necessary to perform their duties, minimizing potential abuse. To address External Breach Through Software Vulnerabilities, a Defense in Depth strategy incorporating regular software updates, vulnerability scanning, and intrusion detection systems can provide layered security against various attack vectors. For mitigating Denial of Service (DoS) Attacks, implementing Multi-factor Authentication (MFA) alongside an Authentication, Authorization, and Accounting (AAA) framework strengthens user verification processes and limits the impact of compromised credentials, while network resilience measures, such as redundant network paths and DDoS protection services, help maintain availability during an attack. These controls, tailored to the specific risks, enhance the security posture by not only preventing incidents but also minimizing their impact, thereby protecting critical business functions and data integrity.
