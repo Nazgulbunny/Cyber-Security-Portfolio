@@ -813,3 +813,41 @@ In conducting this qualitative vulnerability assessment, the selection of the th
 
 #### Proposed Remediation Strategy 
 To remediate or mitigate the risks identified in the vulnerability assessment, several strategic security controls can be implemented. For the risk of Unauthorized Access by Privileged Users, enforcing the Principle of Least Privilege through rigorous access control policies ensures that users have only the access necessary to perform their duties, minimizing potential abuse. To address External Breach Through Software Vulnerabilities, a Defense in Depth strategy incorporating regular software updates, vulnerability scanning, and intrusion detection systems can provide layered security against various attack vectors. For mitigating Denial of Service (DoS) Attacks, implementing Multi-factor Authentication (MFA) alongside an Authentication, Authorization, and Accounting (AAA) framework strengthens user verification processes and limits the impact of compromised credentials, while network resilience measures, such as redundant network paths and DDoS protection services, help maintain availability during an attack. These controls, tailored to the specific risks, enhance the security posture by not only preventing incidents but also minimizing their impact, thereby protecting critical business functions and data integrity.
+
+#Document an incident with an incident handler's journal
+_In this activity, you will review the details of a security incident and document the incident using your incident handler's journal._
+
+## Scenario
+_A small U.S. health care clinic specializing in delivering primary-care services experienced a security incident on a Tuesday morning, at approximately 9:00 a.m. Several employees reported that they were unable to use their computers to access files like medical records. Business operations shut down because employees were unable to access the files and software needed to do their job._
+
+_Additionally, employees also reported that a ransom note was displayed on their computers. The ransom note stated that all the company's files were encrypted by an organized group of unethical hackers who are known to target organizations in healthcare and transportation industries. In exchange for restoring access to the encrypted files, the ransom note demanded a large sum of money in exchange for the decryption key._ 
+
+_The attackers were able to gain access into the company's network by using targeted phishing emails, which were sent to several employees of the company. The phishing emails contained a malicious attachment that installed malware on the employee's computer once it was downloaded._
+
+_Once the attackers gained access, they deployed their ransomware, which encrypted critical files. The company was unable to access critical patient data, causing major disruptions in their business operations. The company was forced to shut down their computer systems and contact several organizations to report the incident and receive technical assistance._
+
+### Incident handler's journal
+*Date:* 14.03.2024
+*Entry:* 1
+*Description:* Today, we are examining an incident that occurred on a Tuesday morning around 9:00 AM. Employees of a small healthcare clinic in the US were targeted by a group of unethical activists. Through a phishing attack, the activists tricked the employees into installing malware that encrypted files and demanded a large sum of money for decryption. As a result, the clinic had to shut down its operations because they were unable to access critical patient data. Additionally, they were forced to shut down their computers and report the incident to obtain technical assistance.
+*Tool(s) used:* The investigation currently highlights three tools used in the attack:
+- A mass phishing email campaign targeting the company's employees.
+- Ransomware to encrypt the data, rendering it inaccessible to the company.
+- Downloadable malware used to install the malicious software.
+*The 5 W's:*
+- Who caused the incident?
+The Incident was caused by a group of unethical hacktivists   
+
+- What happened?
+  The unethical hacktivist group targeted the company's employees with a mass phishing attack, tricking them into installing malware on their computers. Once the hacktivists gained access to the company's network, they deployed ransomware to encrypt critical patient data. They then demanded a large sum of money in exchange for the decryption key.
+
+- When did the incident occur?
+  The incident occurred on a Tuesday morning around 9:00 AM
+
+- Where did the incident happen?
+  The incident occurred at a small healthcare clinic in the US, specialized in delivering primary care services. It initially affected many employees' computers before spreading to the company's network.
+
+- Why did the incident happen?
+  It appears that the employees were not adequately trained in recognizing phishing emails, which led to them being tricked by a fraudulent email into installing malware on their computers
+
+  *Additional notes:* We are yet to determine how the hacktivists gained access to the company's email system, and we cannot rule out the possibility of an insider's involvement. Furthermore, our ongoing efforts include devising a strategy for recovery to restore the company's operations. It is also crucial to ascertain whether the company has backups of the affected files and to identify the specific information compromised in the attack.
