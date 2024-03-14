@@ -827,13 +827,15 @@ _The attackers were able to gain access into the company's network by using targ
 _Once the attackers gained access, they deployed their ransomware, which encrypted critical files. The company was unable to access critical patient data, causing major disruptions in their business operations. The company was forced to shut down their computer systems and contact several organizations to report the incident and receive technical assistance._
 
 ### Incident handler's journal
+
 *Date:* 14.03.2024
+
 *Entry:* 1
+
 *Description:* Today, we are examining an incident that occurred on a Tuesday morning around 9:00 AM. Employees of a small healthcare clinic in the US were targeted by a group of unethical activists. Through a phishing attack, the activists tricked the employees into installing malware that encrypted files and demanded a large sum of money for decryption. As a result, the clinic had to shut down its operations because they were unable to access critical patient data. Additionally, they were forced to shut down their computers and report the incident to obtain technical assistance.
-*Tool(s) used:* The investigation currently highlights three tools used in the attack:
-- A mass phishing email campaign targeting the company's employees.
-- Ransomware to encrypt the data, rendering it inaccessible to the company.
-- Downloadable malware used to install the malicious software.
+
+*Tool(s) used:* None known at the moment
+
 *The 5 W's:*
 - Who caused the incident?
 The Incident was caused by a group of unethical hacktivists   
