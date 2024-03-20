@@ -853,3 +853,96 @@ The Incident was caused by a group of unethical hacktivists
   It appears that the employees were not adequately trained in recognizing phishing emails, which led to them being tricked by a fraudulent email into installing malware on their computers
 
   *Additional notes:* We are yet to determine how the hacktivists gained access to the company's email system, and we cannot rule out the possibility of an insider's involvement. Furthermore, our ongoing efforts include devising a strategy for recovery to restore the company's operations. It is also crucial to ascertain whether the company has backups of the affected files and to identify the specific information compromised in the attack.
+  *Date:* 14.03.2024
+
+*Entry:* #2
+
+*Date:* 15.03.2024
+
+*Description:*In this analysis, I delved into a packet capture file using Wireshark, a  network protocol analyzer. 
+
+*Tool(s) used:* Wiresharks
+
+*The 5 W's:*
+- Who caused the incident?
+No info
+
+- What happened?
+ No Info
+
+- When did the incident occur?
+ No info
+
+- Where did the incident happen?
+No info
+
+- Why did the incident happen?
+ No info
+
+  *Additional notes:* Before this exercise, I had no experience with Wireshark, sparking a sense of excitement at the prospect of analyzing a packet capture file. Initially, the complexity of Wireshark's interface was daunting, presenting an array of options and data that seemed impenetrable at first. This experience quickly shed light on the tool's esteemed reputation for dissecting network traffic. Its comprehensive capabilities for capturing and analyzing data packets make it evident why Wireshark is considered an indispensable asset in network analysis and cybersecurity.
+  
+
+*Entry:* #3
+
+*Date:* 16.03.2024
+
+*Description:* TCPdump Capturing Packages.In this activity, I utilized tcpdump to capture and scrutinize network traffic. Tcpdump stands as a network protocol analyzer that operates via the command-line interface. It empowers security analysts with the ability to capture, sift through, and interpret network traffic. This command-line tool is essential for delving into the intricacies of network communications, aiding analysts in identifying and mitigating potential security threats.
+
+*Tool(s) used:*TCPdump on linux
+
+*The 5 W's:*
+- Who caused the incident?
+no info   
+
+- What happened?
+no info
+
+- When did the incident occur?
+ no info
+
+- Where did the incident happen?
+no info
+
+- Why did the incident happen?
+ no info
+
+  *Additional notes:* It was nice to see that my Linux skills are not rusty and that I could use well the commands. I found the sue of TCPdump usefull and straightforward. 
+
+*Entry:* #4
+
+*Date:* 16.03.2024
+
+*Description:*  I needed to investigate a suspicious file hash. With this Scenario, I leveraged VirusTotal, a comprehensive tool designed for the detection of malicious content, including viruses, worms, trojans, and other threats. VirusTotal proves invaluable for swift examinations of potential indicators of compromise, such as files or websites, by checking if they have been flagged as malicious by the cybersecurity community. For this particular task, I used VirusTotal to scrutinize a file hash, which was indeed identified as malicious. This activity unfolded during the Detection and Analysis phase, positioning me in the role of a security analyst within a Security Operations Center (SOC). Faced with a suspicious file hash flagged by our security infrastructure, it became imperative to conduct a thorough investigation to ascertain the legitimacy of the threat. This deeper analysis was crucial in determining whether the alert was indicative of an actual security risk, underscoring the critical nature of accurate threat detection and analysis in maintaining organizational security.
+
+*Tool(s) used:* Virus total 
+
+*The 5 W's:*
+- Who caused the incident?
+An unknown malicious actor targeted a financial services company, orchestrating a cybersecurity incident through a deceptive email.
+
+- What happened?
+This email, sent to an unsuspecting employee, harboured a malicious file attachment. The nefarious nature of this file was underscored by its SHA-256 hash value, 54e6ea47eb04634d3e87fd7787e2136ccfbcc80ade34f246a12cf93bab527f6b, marking it as a significant security threat.
+
+- When did the incident occur?
+   The security breach was promptly identified at 1:20 p.m., when the organization's intrusion detection system flagged the suspicious file, triggering an immediate alert to the company's Security Operations Center (SOC).
+
+- Where did the incident happen?
+The incident unfolded within the digital confines of an employee's computer at the company.
+
+- Why did the incident happen?
+  The root cause of this security lapse was traced back to the employee's action of downloading and executing the email attachment, a lapse in vigilance that facilitated the entry of the malicious file into the company's network. This event highlights the critical importance of cybersecurity awareness and the need for robust security measures to preempt such threats.
+  
+  *Additional notes:* It is mandatory to reflect and understand how we can avoid this issue in the future. Probably a retrospective about the cause and lessons learned needs to be done to understand the next steps for us.
+
+  #### Reflections /Notes
+
+_Challenges Encountered:_
+
+The use of splunk presented a significant learning curve for me, particularly as someone new to use their user interface. Grappling with the syntax required for Splunk was a steep learning curve that initially led to frustration due to incorrect outputs. However, upon revisiting the activity and meticulously reviewing the instructions, I identified and rectified my errors. This experience taught me the value of patience and the importance of thoroughly understanding the instructions before proceeding.
+
+Evolving Understanding of Incident Detection and Response:
+My comprehension of incident detection and response has markedly improved after completing this course. Initially, my grasp of the subject was rudimentary, knowing only the basic contours of what detection and response involved without appreciating its intricacies. The course provided deep insights into the incident lifecycle, underscored the criticality of having robust plans, processes, and teams in place, and introduced a variety of tools integral to this domain. I emerge from this course with a richer understanding and a solid foundation in incident detection and response. I really like to understand what threat hunters do and it has increased my interest on being in blue or purple team
+
+Favorite Tool/Concept:
+The aspect of the course I found most engaging was the segment on network traffic analysis. Being my first foray into this area, I was equally challenged and intrigued. The ability to capture and analyze network traffic in real time using network protocol analyzers was captivating. This introduction has sparked a keen interest in delving deeper into network traffic analysis, and I am eager to further develop my skills in this area, with the goal of achieving proficiency in the use of network protocol analyzers.
+
