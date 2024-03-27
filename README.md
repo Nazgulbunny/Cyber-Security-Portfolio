@@ -946,3 +946,35 @@ My comprehension of incident detection and response has markedly improved after 
 Favorite Tool/Concept:
 The aspect of the course I found most engaging was the segment on network traffic analysis. Being my first foray into this area, I was equally challenged and intrigued. The ability to capture and analyze network traffic in real time using network protocol analyzers was captivating. This introduction has sparked a keen interest in delving deeper into network traffic analysis, and I am eager to further develop my skills in this area, with the goal of achieving proficiency in the use of network protocol analyzers.
 
+# Portfolio Activity: Update a file through a Python algorithm
+_In this activity, you will create a new portfolio document to demonstrate your experience using Python to develop algorithms that involve opening files and parsing their contents_
+
+## Scenario 
+_You are a security professional working at a health care company. As part of your job, you're required to regularly update a file that identifies the employees who can access restricted content. The contents of the file are based on who is working with personal patient records. Employees are restricted access based on their IP address. There is an allow list for IP addresses permitted to sign into the restricted subnetwork. There's also a remove list that identifies which employees you must remove from this allow list._
+
+_Your task is to create an algorithm that uses Python code to check whether the allow list contains any IP addresses identified on the remove list. If so, you should remove those IP addresses from the file containing the allow list._
+
+### Algorithm for file updates in Python
+#### Project description
+A hospital or healthcare company needs to keep patient records. Due to this, we need to ensure that only certain employees can look at these private records online. Each employee uses a computer with a unique "address" (called an IP address) to access these records. Via a list, known as the "allow list," which names all the computer addresses that can access these sensitive records, we are going to make sure that only the IP addresses in that list are allow to see the records and we will remove the IP addresses that are not allowed to see the records.
+
+Sometimes, an employee's access needs to be taken away for various reasons. Their computer addresses are then put on a "remove list." So we need to check the allow list and ensure none of the addresses on the remove list can still get into the restricted records.
+
+#### Open the file that contains the allowed list
+` # Assign `import_file` to the name of the file 
+
+import_file = "allow_list.txt"
+
+# Assign `remove_list` to a list of IP addresses that are no longer allowed to access restricted information. 
+
+remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]
+
+# First line of `with` statement
+
+with open(import_file,"r")as file:
+    print(file.read())`
+
+#### Read the file contents
+
+#### Convert the string into a list
+
