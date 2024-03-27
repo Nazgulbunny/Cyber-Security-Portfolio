@@ -985,23 +985,23 @@ ip_addresses = file.read(): Inside the with block, we call the .read() method on
 
 print(ip_addresses): Finally, we print the contents of ip_addresses to verify that we have successfully read the file. This step is useful for debugging and ensuring that the data is loaded as expected.
 
-# Assign `import_file` to the name of the file 
+#Assign `import_file` to the name of the file 
 
 <code>import_file = "allow_list.txt"</code>
 
-# Assign `remove_list` to a list of IP addresses that are no longer allowed to access restricted information. 
+#Assign `remove_list` to a list of IP addresses that are no longer allowed to access restricted information. 
 
 <code>remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]</code>
 
-# Build `with` statement to read in the initial contents of the file
+#Build `with` statement to read in the initial contents of the file
 
 <code>with open(import_file, "r") as file:</code>
 
-  # Use `.read()` to read the imported file and store it in a variable named `ip_addresses`
+  #Use `.read()` to read the imported file and store it in a variable named `ip_addresses`
 
  <code> ip_addresses = file.read()</code>
 
-# Display `ip_addresses`
+#Display `ip_addresses`
 
 <code>print(ip_addresses)</code>
 
