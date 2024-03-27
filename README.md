@@ -1084,3 +1084,50 @@ The for loop in Python iterates over each item in a sequence (in this case, the 
 
    <code>print(element)</code>
 
+#### Remove IP addresses that are on the remove list
+
+Once we have both the allow list (ip_addresses list) and the remove list (remove_list) prepared, we must ensure that any IP address on the remove list is eliminated from the allow list. This process involves iterating through the list of IP addresses to be removed and checking if they are present in the allowed list.
+We do that with an iterative Statement (For Loop):Iterate through each element in the remove_list to check if it's present in the ip_addresses list. If so, it should be removed.
+After we add a conditional Statement (If): The if statement checks whether the current element from remove_list is in the ip_addresses list.
+The last thing we need to do is to remove an Element: The .remove() method is used to remove the first matching value (which in this case is element) from the ip_addresses list.
+
+#Assign `import_file` to the name of the file 
+
+<code>import_file = "allow_list.txt"</code>
+
+#Assign `remove_list` to a list of IP addresses that are no longer allowed to access restricted information. 
+
+<code>remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]</code>
+
+#Build `with` statement to read in the initial contents of the file
+
+<code>with open(import_file, "r") as file:</code>
+
+  #Use `.read()` to read the imported file and store it in a variable named `ip_addresses`
+
+ <code>ip_addresses = file.read()</code>
+
+#Use `.split()` to convert `ip_addresses` from a string to a list
+
+<code>ip_addresses = ip_addresses.split()</code>
+
+#Build iterative statement
+#Name loop variable `element`
+#Loop through `ip_addresses`
+
+<code>for element in ip_addresses:</code>
+  
+  #Build conditional statement
+  #If current element is in `remove_list`,
+  
+   <code>if element in remove_list:</code>
+
+   #then current element should be removed from `ip_addresses`
+
+   <code>ip_addresses.remove(element)</code>
+
+#Display `ip_addresses` 
+
+<code>print(ip_addresses)</code>
+
+
