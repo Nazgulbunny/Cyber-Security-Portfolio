@@ -1154,3 +1154,6 @@ Using .write() Method: The .write() method writes a string to the file. Here, we
 
 This operation replaces the content of import_file with the updated, newline-separated string of IP addresses.
 
+#### Summary
+The algorithm begins by reading the current "allow list" from a file, converting its contents into a manipulatable list of IP addresses. It then cross-references these addresses with a predefined "remove list" to identify which IPs need to be excluded. Through careful iteration and condition checking, any matching addresses are removed from the allow list, ensuring it reflects only currently authorized access. Finally, the updated list is converted back into a string, formatted for readability with each IP address on a new line, and written back to the original file. This process not only automates a critical security function but also demonstrates the power of Python for handling and manipulating file-based data efficiently.
+
