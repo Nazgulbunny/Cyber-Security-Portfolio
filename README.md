@@ -1047,3 +1047,40 @@ print(ip_addresses): To verify the successful conversion of the string to a list
 #Display `ip_addresses`
 
 <code>print(ip_addresses)</code>
+
+#### Iterate through the remove list
+
+To iterate through the remove_list and use element as the loop variable, we need to set up a for loop that goes through each IP address in remove_list.
+Once we have a list of IP addresses (ip_addresses) from the "allow_list.txt" file and a remove_list containing IP addresses to be removed, we need to iterate through remove_list to identify and remove the specified addresses from ip_addresses.
+The for loop in Python iterates over each item in a sequence (in this case, the remove_list) one at a time. For each iteration, the item is temporarily assigned to a loop variable (here, element), which can then be used within the loop body.
+ #Assign `import_file` to the name of the file 
+
+<code>import_file = "allow_list.txt"</code>
+
+#Assign `remove_list` to a list of IP addresses that are no longer allowed to access restricted information. 
+
+<code>remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]</code>
+
+#Build `with` statement to read in the initial contents of the file
+
+<code>with open(import_file, "r") as file:</code>
+
+  #Use `.read()` to read the imported file and store it in a variable named `ip_addresses`
+
+  <code>ip_addresses = file.read()</code>
+
+#Use `.split()` to convert `ip_addresses` from a string to a list
+
+<code>ip_addresses = ip_addresses.split()</code>
+
+#Build iterative statement
+#Name loop variable `element`
+#Loop through `ip_addresses`
+
+<code>for element in ip_addresses:</code>
+
+
+   #Display element in every iteration
+
+   <code>print(element)</code>
+
