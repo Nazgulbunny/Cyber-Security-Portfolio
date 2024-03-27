@@ -961,18 +961,18 @@ A hospital or healthcare company needs to keep patient records. Due to this, we 
 Sometimes, an employee's access needs to be taken away for various reasons. Their computer addresses are then put on a "remove list." So we need to check the allow list and ensure none of the addresses on the remove list can still get into the restricted records.
 
 #### Open the file that contains the allowed list
-` #Assign import_file to the name of the file 
+ #Assign import_file to the name of the file 
 
-import_file = "allow_list.txt"
+<code>import_file = "allow_list.txt"</code>
 
 #Assign remove_list to a list of IP addresses that are no longer allowed to access restricted information. 
 
-remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]
+<code>remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]</code>
 
 #First line of with statement
 
-with open(import_file,"r")as file:
-    print(file.read())`
+<code>with open(import_file,"r")as file:
+    print(file.read()) </code>
 
 #### Read the file contents
 
