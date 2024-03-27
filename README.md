@@ -1007,4 +1007,43 @@ print(ip_addresses): Finally, we print the contents of ip_addresses to verify th
 
 
 #### Convert the string into a list
+To accomplish the task of converting the ip_addresses string into a list  we are using the .split() method.
 
+*Convert the String into a List*
+After successfully reading the contents of "allow_list.txt" into a string variable named ip_addresses, the next step involves transforming this string into a list of individual IP addresses. This conversion is necessary for easier manipulation of the data, particularly for the task of removing specific IP addresses identified in the remove_list.
+
+*Using the .split() Method:*
+
+ip_addresses = ip_addresses.split(): This line of code applies the .split() method to the ip_addresses string. By default, .split() divides a string into a list based on whitespace, including spaces, tabs, and newlines. Since our IP addresses are expected to be separated by spaces or newlines, this method will effectively create a list where each element is an individual IP address from the original string.
+
+*Variable Reassignment:*
+
+By reassigning ip_addresses = ip_addresses.split(), we overwrite the original string with a list of substrings, each representing an IP address that was separated by whitespace in the original string.
+
+*Displaying the Result:*
+
+print(ip_addresses): To verify the successful conversion of the string to a list, we print ip_addresses. This will display the list of IP addresses, now each as a separate element within the list, making it clear that the conversion was successful.
+
+#Assign `import_file` to the name of the file 
+
+<code>import_file = "allow_list.txt"</code>
+
+#Assign `remove_list` to a list of IP addresses that are no longer allowed to access restricted information. 
+
+<code>remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]</code>
+
+#Build `with` statement to read in the initial contents of the file
+
+<code>with open(import_file, "r") as file:</code>
+
+  #Use `.read()` to read the imported file and store it in a variable named `ip_addresses`
+
+  <code>ip_addresses = file.read()</code>
+
+#Use `.split()` to convert `ip_addresses` from a string to a list
+
+<code>ip_addresses = ip_addresses.split()</code>
+
+#Display `ip_addresses`
+
+<code>print(ip_addresses)</code>
