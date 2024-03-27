@@ -1130,4 +1130,27 @@ The last thing we need to do is to remove an Element: The .remove() method is us
 
 <code>print(ip_addresses)</code>
 
+#### Update the file with the revised list of IP addresses 
+
+After filtering the ip_addresses list to remove the entries found in remove_list, the final step in our algorithm involves updating the original file with this revised list. To accomplish this, we must first convert the list back into a string, using the .join() method for formatting. Then, we use the .write() method to overwrite the original file with the updated contents.
+
+*Converting the List to a String*
+Using .join() Method: The .join() method is used to concatenate the elements of a list into a single string, with each element separated by a specified delimiter. In this case, we use "\n" (newline character) as the delimiter to ensure each IP address appears on a new line in the file.
+
+<code>ip_addresses_str = "\n".join(ip_addresses)</code>
+
+This line creates a string ip_addresses_str where each IP address from the ip_addresses list is separated by a newline character, preparing it for writing to the file in a properly formatted manner.
+Writing the Updated List to the File
+Opening the File for Writing: To update the file, we open it again, this time in write mode ("w"). This mode allows us to write new content to the file, replacing its existing contents.
+
+<code>with open(import_file, "w") as file:</code>
+
+Within this with statement, the file variable now refers to the opened file in write mode.
+
+Using .write() Method: The .write() method writes a string to the file. Here, we use it to write the ip_addresses_str string to the file, effectively updating it with the revised list of IP addresses.
+
+<code>file.write(ip_addresses_str)</code>
+
+
+This operation replaces the content of import_file with the updated, newline-separated string of IP addresses.
 
