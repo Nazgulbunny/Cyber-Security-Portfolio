@@ -975,6 +975,36 @@ Sometimes, an employee's access needs to be taken away for various reasons. Thei
     print(file.read()) </code>
 
 #### Read the file contents
+In this section of the algorithm, we aim to read the contents of a file named "allow_list.txt" and store these contents as a string in a variable for further processing. The steps involve opening the file, reading its contents, and then storing these contents. 
+
+*Reading the File:*
+
+ip_addresses = file.read(): Inside the with block, we call the .read() method on our file object. This method reads the entire content of the file and returns it as a single string. We assign this string to the variable ip_addresses, which now contains all the data from "allow_list.txt".
+
+*Displaying the Contents:*
+
+print(ip_addresses): Finally, we print the contents of ip_addresses to verify that we have successfully read the file. This step is useful for debugging and ensuring that the data is loaded as expected.
+
+# Assign `import_file` to the name of the file 
+
+<code>import_file = "allow_list.txt"</code>
+
+# Assign `remove_list` to a list of IP addresses that are no longer allowed to access restricted information. 
+
+<code>remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]</code>
+
+# Build `with` statement to read in the initial contents of the file
+
+<code>with open(import_file, "r") as file:</code>
+
+  # Use `.read()` to read the imported file and store it in a variable named `ip_addresses`
+
+ <code> ip_addresses = file.read()</code>
+
+# Display `ip_addresses`
+
+<code>print(ip_addresses)</code>
+
 
 #### Convert the string into a list
 
