@@ -1,6 +1,10 @@
 # Cyber-Security-Portfolio
 A Portfolio with all the projects related to cyber-security I have worked on
 
+<img src="https://tryhackme-badges.s3.amazonaws.com/NazgulRabbit.png" alt="TryHackMe">
+
+
+
 ## Google Cybersecurity Professional Certificate On Coursera
 
 ### Portfolio Activity: Draft a professional statement
