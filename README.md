@@ -1,7 +1,23 @@
 # Cyber-Security-Portfolio
 A Portfolio with all the projects related to cyber-security I have worked on
 
+
+*TryHackme Profile*
+
 <img src="https://tryhackme-badges.s3.amazonaws.com/NazgulRabbit.png" alt="TryHackMe">
+
+*TryHackme Badges*
+
+[7-day-streak](https://tryhackme.com/NazgulRabbit/badges/7-day-streak)
+
+[Networking Nerd](https://tryhackme.com/NazgulRabbit/badges/network-fundamentals)
+
+[Webbed](https://tryhackme.com/NazgulRabbit/badges/web-fund)
+
+[World Wide Web](https://tryhackme.com/NazgulRabbit/badges/world-wide-web)
+
+[Cat Linux.txt](https://tryhackme.com/NazgulRabbit/badges/terminaled)
+
 
 
 
