@@ -18,6 +18,7 @@ A Portfolio with all the projects related to cyber-security I have worked on
 
 [Cat Linux.txt](https://tryhackme.com/NazgulRabbit/badges/terminaled)
 
+[30-Day-Streak](tryhackme.com/NazgulRabbit/badges/30-day-streak)
 
 
 
