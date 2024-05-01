@@ -23,6 +23,7 @@ A Portfolio with all the projects related to cyber-security I have worked on
 
 *TryHackme Learning Paths Completed*
 
+- [Introduction to Cybersecurity Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PO0FQK7L3Z.png)
 - [Pre Security Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PO0FQK7L3Z.png)
 - 
 
