@@ -21,6 +21,12 @@ A Portfolio with all the projects related to cyber-security I have worked on
 [30-Day-Streak](https://tryhackme.com/NazgulRabbit/badges/30-day-streak)
 
 
+*TryHackme Learning Paths Completed*
+
+- [Pre Security Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PO0FQK7L3Z.png)
+- 
+
+
 
 ## Google Cybersecurity Professional Certificate On Coursera
 
