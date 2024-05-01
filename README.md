@@ -8,17 +8,17 @@ A Portfolio with all the projects related to cyber-security I have worked on
 
 *TryHackme Badges*
 
-[7-day-streak](https://tryhackme.com/NazgulRabbit/badges/7-day-streak)
+- [7-day-streak](https://tryhackme.com/NazgulRabbit/badges/7-day-streak)
 
-[Networking Nerd](https://tryhackme.com/NazgulRabbit/badges/network-fundamentals)
+- [Networking Nerd](https://tryhackme.com/NazgulRabbit/badges/network-fundamentals)
 
-[Webbed](https://tryhackme.com/NazgulRabbit/badges/web-fund)
+- [Webbed](https://tryhackme.com/NazgulRabbit/badges/web-fund)
 
-[World Wide Web](https://tryhackme.com/NazgulRabbit/badges/world-wide-web)
+- [World Wide Web](https://tryhackme.com/NazgulRabbit/badges/world-wide-web)
 
-[Cat Linux.txt](https://tryhackme.com/NazgulRabbit/badges/terminaled)
+- [Cat Linux.txt](https://tryhackme.com/NazgulRabbit/badges/terminaled)
 
-[30-Day-Streak](https://tryhackme.com/NazgulRabbit/badges/30-day-streak)
+- [30-Day-Streak](https://tryhackme.com/NazgulRabbit/badges/30-day-streak)
 
 
 *TryHackme Learning Paths Completed*
