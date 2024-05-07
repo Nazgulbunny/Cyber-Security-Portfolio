@@ -20,6 +20,8 @@ A Portfolio with all the projects related to cyber-security I have worked on
 
 - [30-Day-Streak](https://tryhackme.com/NazgulRabbit/badges/30-day-streak)
 
+- [OSWAP TOP 10 ](https://tryhackme.com/NazgulRabbit/badges/owasp-10)
+
 
 *TryHackme Learning Paths Completed*
 
