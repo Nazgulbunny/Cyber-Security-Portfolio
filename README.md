@@ -22,6 +22,8 @@ A Portfolio with all the projects related to cyber-security I have worked on
 
 - [OSWAP TOP 10 ](https://tryhackme.com/NazgulRabbit/badges/owasp-10)
 
+- [Introduction To Security Engineering](https://tryhackme.com/NazgulRabbit/badges/intro-to-security-engineering)
+
 
 *TryHackme Learning Paths Completed*
 
