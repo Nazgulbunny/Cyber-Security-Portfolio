@@ -24,6 +24,8 @@ A Portfolio with all the projects related to cyber-security I have worked on
 
 - [Introduction To Security Engineering](https://tryhackme.com/NazgulRabbit/badges/intro-to-security-engineering)
 
+- [Hash Cracker](https://tryhackme.com/NazgulRabbit/badges/hash-cracker)
+
 
 *TryHackme Learning Paths Completed*
 
