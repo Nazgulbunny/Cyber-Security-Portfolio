@@ -26,6 +26,8 @@ A Portfolio with all the projects related to cyber-security I have worked on
 
 - [Hash Cracker](https://tryhackme.com/NazgulRabbit/badges/hash-cracker)
 
+- [Metasploitable](https://tryhackme.com/NazgulRabbit/badges/metasploitable)
+
 
 *TryHackme Learning Paths Completed*
 
