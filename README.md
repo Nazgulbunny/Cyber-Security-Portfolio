@@ -28,6 +28,8 @@ A Portfolio with all the projects related to cyber-security I have worked on
 
 - [Metasploitable](https://tryhackme.com/NazgulRabbit/badges/metasploitable)
 
+- [Blue-Hacking into Windows via EternalBlue](https://tryhackme.com/NazgulRabbit/badges/blue)
+
 
 *TryHackme Learning Paths Completed*
 
