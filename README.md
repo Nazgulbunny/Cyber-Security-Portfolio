@@ -30,6 +30,8 @@ A Portfolio with all the projects related to cyber-security I have worked on
 
 - [Blue-Hacking into Windows via EternalBlue](https://tryhackme.com/NazgulRabbit/badges/blue)
 
+- [Linux PrivEsc](https://tryhackme.com/NazgulRabbit/badges/linux-privesc)
+
 
 *TryHackme Learning Paths Completed*
 
