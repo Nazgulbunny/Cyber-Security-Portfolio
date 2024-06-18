@@ -32,6 +32,8 @@ A Portfolio with all the projects related to cyber-security I have worked on
 
 - [Linux PrivEsc](https://tryhackme.com/NazgulRabbit/badges/linux-privesc)
 
+- [Intro to Web Hacking](https://tryhackme.com/NazgulRabbit/badges/intro-to-web-hacking)
+
 
 *TryHackme Learning Paths Completed*
 
