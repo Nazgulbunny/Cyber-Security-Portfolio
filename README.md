@@ -34,12 +34,17 @@ A Portfolio with all the projects related to cyber-security I have worked on
 
 - [Intro to Web Hacking](https://tryhackme.com/NazgulRabbit/badges/intro-to-web-hacking)
 
+- [90 Days Streak](https://tryhackme.com/NazgulRabbit/badges/90-day-streak)
+
+- [Burp'ed](https://tryhackme.com/NazgulRabbit/badges/burped)
+
 
 *TryHackme Learning Paths Completed*
 
 - [Introduction to Cybersecurity Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ZPF2T3AEXK.png)
 - [Pre Security Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PO0FQK7L3Z.png)
 - [Complete Beginner Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-CPFOSQTUMQ.png)
+- [Web Fundamental Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-DPZBVXEVZP.png)
 
 
 
