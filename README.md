@@ -38,6 +38,8 @@ A Portfolio with all the projects related to cyber-security I have worked on
 
 - [Burp'ed](https://tryhackme.com/NazgulRabbit/badges/burped)
 
+- [Skilled Navigator](https://tryhackme.com/NazgulRabbit/badges/skilled-navigator)
+
 
 *TryHackme Learning Paths Completed*
 
