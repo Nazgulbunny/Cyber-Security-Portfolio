@@ -40,6 +40,8 @@ A Portfolio with all the projects related to cyber-security I have worked on
 
 - [Skilled Navigator](https://tryhackme.com/NazgulRabbit/badges/skilled-navigator)
 
+- [Phishing](https://tryhackme.com/NazgulRabbit/badges/phishing)
+
 
 *TryHackme Learning Paths Completed*
 
