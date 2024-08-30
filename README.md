@@ -42,6 +42,8 @@ A Portfolio with all the projects related to cyber-security I have worked on
 
 - [Phishing](https://tryhackme.com/NazgulRabbit/badges/phishing)
 
+- [Friday Fixer](https://tryhackme.com/NazgulRabbit/badges/friday-fixer)
+
 
 *TryHackme Learning Paths Completed*
 
