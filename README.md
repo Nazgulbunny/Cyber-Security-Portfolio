@@ -46,6 +46,8 @@ A Portfolio with all the projects related to cyber-security I have worked on
 
 - [Manic Monday](https://tryhackme.com/NazgulRabbit/badges/manic-monday)
 
+- [To benign or not benign?](https://tryhackme.com/NazgulRabbit/badges/to-benign-or-not-benign)
+
 
 *TryHackme Learning Paths Completed*
 
