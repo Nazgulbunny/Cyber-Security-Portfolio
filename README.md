@@ -6,6 +6,8 @@ A Portfolio with all the projects related to cyber-security I have worked on
 
 <img src="https://tryhackme-badges.s3.amazonaws.com/NazgulRabbit.png" alt="TryHackMe">
 
+<script src="https://tryhackme.com/badge/2782653"></script>
+
 *TryHackme Badges*
 
 - [7-day-streak](https://tryhackme.com/NazgulRabbit/badges/7-day-streak)
