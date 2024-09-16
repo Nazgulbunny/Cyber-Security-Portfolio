@@ -4,7 +4,7 @@ A Portfolio with all the projects related to cyber-security I have worked on
 
 *TryHackme Profile*
 
-
+<img src="https://tryhackme-badges.s3.amazonaws.com/NazgulRabbit.png" alt="TryHackMe">
 
 *TryHackme Badges*
 
