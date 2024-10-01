@@ -48,6 +48,8 @@ A Portfolio with all the projects related to cyber-security I have worked on
 
 - [To benign or not benign?](https://tryhackme.com/NazgulRabbit/badges/to-benign-or-not-benign)
 
+- [180 Day Streak Hacking for 180 days in a row](https://tryhackme.com/NazgulRabbit/badges/180-day-streak)
+
 
 *TryHackme Learning Paths Completed*
 
