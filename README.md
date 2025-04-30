@@ -58,9 +58,9 @@ A Portfolio with all the projects related to cyber-security I have worked on
 - [Complete Beginner Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-CPFOSQTUMQ.png)
 - [Web Fundamental Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-DPZBVXEVZP.png)
 - [Cybersecurity 101](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-8JVXHHW6IM.pdf)
-- [Web Fundamental Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-DPZBVXEVZP.png)
-- [Web Fundamental Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-DPZBVXEVZP.png)
-- [Web Fundamental Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-DPZBVXEVZP.png)
+- [Soc Level 1](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-8TAEZXYEVE.pdf)
+- [Security Engineer](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-7YZOJC0PTS.pdf)
+- 
 - 
 
 
