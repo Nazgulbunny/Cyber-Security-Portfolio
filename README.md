@@ -4,7 +4,7 @@ A Portfolio with all the projects related to cybersecurity I have worked on
 
 *TryHackme Profile*
 
-<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2782653" style='border:none;'></iframe>
+<img src="https://tryhackme-badges.s3.amazonaws.com/NazgulRabbit.png" alt="Your Image Badge" />
 
 
 *TryHackme Badges*
