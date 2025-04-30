@@ -7,51 +7,6 @@ A Portfolio with all the projects related to cybersecurity I have worked on
 <img src="https://tryhackme-badges.s3.amazonaws.com/NazgulRabbit.png" alt="Your Image Badge" />
 
 
-*TryHackme Badges*
-
-- [7-day-streak](https://tryhackme.com/NazgulRabbit/badges/7-day-streak)
-
-- [Networking Nerd](https://tryhackme.com/NazgulRabbit/badges/network-fundamentals)
-
-- [Webbed](https://tryhackme.com/NazgulRabbit/badges/web-fund)
-
-- [World Wide Web](https://tryhackme.com/NazgulRabbit/badges/world-wide-web)
-
-- [Cat Linux.txt](https://tryhackme.com/NazgulRabbit/badges/terminaled)
-
-- [30-Day-Streak](https://tryhackme.com/NazgulRabbit/badges/30-day-streak)
-
-- [OSWAP TOP 10 ](https://tryhackme.com/NazgulRabbit/badges/owasp-10)
-
-- [Introduction To Security Engineering](https://tryhackme.com/NazgulRabbit/badges/intro-to-security-engineering)
-
-- [Hash Cracker](https://tryhackme.com/NazgulRabbit/badges/hash-cracker)
-
-- [Metasploitable](https://tryhackme.com/NazgulRabbit/badges/metasploitable)
-
-- [Blue-Hacking into Windows via EternalBlue](https://tryhackme.com/NazgulRabbit/badges/blue)
-
-- [Linux PrivEsc](https://tryhackme.com/NazgulRabbit/badges/linux-privesc)
-
-- [Intro to Web Hacking](https://tryhackme.com/NazgulRabbit/badges/intro-to-web-hacking)
-
-- [90 Days Streak](https://tryhackme.com/NazgulRabbit/badges/90-day-streak)
-
-- [Burp'ed](https://tryhackme.com/NazgulRabbit/badges/burped)
-
-- [Skilled Navigator](https://tryhackme.com/NazgulRabbit/badges/skilled-navigator)
-
-- [Phishing](https://tryhackme.com/NazgulRabbit/badges/phishing)
-
-- [Friday Fixer](https://tryhackme.com/NazgulRabbit/badges/friday-fixer)
-
-- [Manic Monday](https://tryhackme.com/NazgulRabbit/badges/manic-monday)
-
-- [To benign or not benign?](https://tryhackme.com/NazgulRabbit/badges/to-benign-or-not-benign)
-
-- [180 Day Streak Hacking for 180 days in a row](https://tryhackme.com/NazgulRabbit/badges/180-day-streak)
-
-
 *TryHackme Learning Paths Certification Completed*
 
 - [Introduction to Cybersecurity Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ZPF2T3AEXK.png)
