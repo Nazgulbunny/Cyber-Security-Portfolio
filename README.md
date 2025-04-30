@@ -51,12 +51,17 @@ A Portfolio with all the projects related to cyber-security I have worked on
 - [180 Day Streak Hacking for 180 days in a row](https://tryhackme.com/NazgulRabbit/badges/180-day-streak)
 
 
-*TryHackme Learning Paths Completed*
+*TryHackme Learning Paths Certification Completed*
 
 - [Introduction to Cybersecurity Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ZPF2T3AEXK.png)
 - [Pre Security Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PO0FQK7L3Z.png)
 - [Complete Beginner Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-CPFOSQTUMQ.png)
 - [Web Fundamental Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-DPZBVXEVZP.png)
+- [Cybersecurity 101](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-8JVXHHW6IM.pdf)
+- [Web Fundamental Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-DPZBVXEVZP.png)
+- [Web Fundamental Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-DPZBVXEVZP.png)
+- [Web Fundamental Learning Path](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-DPZBVXEVZP.png)
+- 
 
 
 
