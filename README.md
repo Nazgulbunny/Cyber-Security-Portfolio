@@ -1,10 +1,11 @@
 # Cyber-Security-Portfolio
-A Portfolio with all the projects related to cyber-security I have worked on
+A Portfolio with all the projects related to cybersecurity I have worked on
 
 
 *TryHackme Profile*
 
-<img src="https://tryhackme-badges.s3.amazonaws.com/NazgulRabbit.png" alt="TryHackMe">
+<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2782653" style='border:none;'></iframe>
+
 
 *TryHackme Badges*
 
