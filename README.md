@@ -135,13 +135,17 @@ Investigation of a compromised web application involving a brute-force attack, m
 
 # 🎓 Certifications & Training
 
-##Professional Certifications
+## Professional Certifications
 
-- **CompTIA Security+**
-- **Security Analyst Level 1 (SAL1)**
-- **Certified in Cybersecurity (CC) — ISC2**
-- **Google Cybersecurity Professional Certificate**
-- **Google Cloud Cybersecurity Specialization**
+| Certification | Issuer | Focus |
+|---|---|---|
+| **CompTIA Security+** | CompTIA | Security fundamentals, architecture, operations and risk |
+| **Security Analyst Level 1 (SAL1)** | TryHackMe | SOC operations, detection and incident investigation |
+| **Certified in Cybersecurity (CC)** | ISC2 | Security principles, access control, network security and operations |
+| **Google Cybersecurity Professional Certificate** | Google / Coursera | Security operations, Linux, SQL, Python and incident response |
+| **Google Cloud Cybersecurity Specialization** | Google Cloud / Coursera | Cloud security, IAM, infrastructure protection and monitoring |
+
+➡️ [View Certifications](certifications/README.md)
 
 ---
 
