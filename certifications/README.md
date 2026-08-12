@@ -8,13 +8,15 @@ These credentials complement the practical projects documented throughout this p
 
 ## Professional Certifications
 
-| Certification | Issuer | Focus |
+## Professional Certifications
+
+| Certification | Issuer | Credential |
 |---|---|---|
-| **CompTIA Security+** | CompTIA | Security fundamentals, threats, architecture, operations, risk and governance |
-| **Security Analyst Level 1 (SAL1)** | TryHackMe | SOC operations, security analysis, detection and incident investigation |
-| **Certified in Cybersecurity (CC)** | ISC2 | Security principles, access control, network security, operations and incident response |
-| **Google Cybersecurity Professional Certificate** | Google / Coursera | Security operations, Linux, SQL, Python, networks and incident response |
-| **Google Cloud Cybersecurity Specialization** | Google Cloud / Coursera | Cloud security, IAM, infrastructure protection, monitoring and security operations |
+| **CompTIA Security+** | CompTIA | [Verify Credential](https://www.credly.com/badges/cc197bbd-db76-4465-a2e9-ddf35bdc0ba3/public_url) |
+| **Security Analyst Level 1 (SAL1)** | TryHackMe | — |
+| **Certified in Cybersecurity (CC)** | ISC2 | — |
+| **Google Cybersecurity Professional Certificate** | Google / Coursera | — |
+| **Google Cloud Cybersecurity Specialization** | Google Cloud / Coursera | — |
 
 ---
 

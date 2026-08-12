@@ -137,13 +137,13 @@ Investigation of a compromised web application involving a brute-force attack, m
 
 ## Professional Certifications
 
-| Certification | Issuer | Focus |
+| Certification | Issuer | Credential |
 |---|---|---|
-| **CompTIA Security+** | CompTIA | Security fundamentals, architecture, operations and risk |
-| **Security Analyst Level 1 (SAL1)** | TryHackMe | SOC operations, detection and incident investigation |
-| **Certified in Cybersecurity (CC)** | ISC2 | Security principles, access control, network security and operations |
-| **Google Cybersecurity Professional Certificate** | Google / Coursera | Security operations, Linux, SQL, Python and incident response |
-| **Google Cloud Cybersecurity Specialization** | Google Cloud / Coursera | Cloud security, IAM, infrastructure protection and monitoring |
+| **CompTIA Security+** | CompTIA | [Verify Credential](https://www.credly.com/badges/cc197bbd-db76-4465-a2e9-ddf35bdc0ba3/public_url) |
+| **Security Analyst Level 1 (SAL1)** | TryHackMe | — |
+| **Certified in Cybersecurity (CC)** | ISC2 | — |
+| **Google Cybersecurity Professional Certificate** | Google / Coursera | — |
+| **Google Cloud Cybersecurity Specialization** | Google Cloud / Coursera | — |
 
 ➡️ [View Certifications](certifications/README.md)
 
