@@ -135,9 +135,11 @@ Investigation of a compromised web application involving a brute-force attack, m
 
 # 🎓 Certifications & Training
 
-## Professional Certifications
+##Professional Certifications
 
 - **CompTIA Security+**
+- **Security Analyst Level 1 (SAL1)**
+- **Certified in Cybersecurity (CC) — ISC2**
 - **Google Cybersecurity Professional Certificate**
 - **Google Cloud Cybersecurity Specialization**
 
